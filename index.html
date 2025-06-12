@@ -13,6 +13,8 @@
             margin: 0;
             height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+         flex-direction: column;
         }
 
         header {
@@ -26,11 +28,12 @@
             height: 90px;
             width: 50%;
             border-bottom-left-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
-                
+
             }
-          
+
         }
 
         .capa1 {
@@ -62,16 +65,20 @@
         .logo img {
             height: 100px;
             object-fit: cover;
+             @media (max-width: 900px) {
+                height: 60px;
+            }
         }
 
         main {
+            flex: 1;
             position: relative;
             margin: 0 auto;
             width: 90%;
             background-image: url(/public/invex_marca_agua.png);
-               background-position: center;
-                background-repeat: no-repeat;
-                background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
 
         }
 
@@ -85,7 +92,7 @@
         }
 
         main hr {
-            margin-left: 0;
+            margin: 0;
             width: 60%;
             border: none;
             background: #ededed;
@@ -107,13 +114,6 @@
             line-height: 1.3rem;
         }
 
-        /* .list{
-            color: #a30831;
-            font-weight: 800;
-        }
-        .list li{
-            color: black
-        } */
 
         .list {
             list-style: none;
@@ -141,24 +141,26 @@
             height: 100px;
             background-color: white;
             margin-bottom: 0;
+            margin-top: auto;
         }
 
-         .capa-fotter {
+        .capa-fotter {
             position: absolute;
             top: 0;
             left: 0;
             height: 60px;
             width: 30%;
             border-top-right-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
                 top: 30px;
             }
         }
 
         .fotter1 {
-             background: linear-gradient(to right, #e1a0b6, #7b66a8);
-            
+            background: linear-gradient(to right, #e1a0b6, #7b66a8);
+
             z-index: 1;
         }
 
@@ -167,33 +169,40 @@
             top: 26px;
             width: 37%;
             z-index: 2;
-             @media (max-width: 900px) {
-               top: 56px;
+
+            @media (max-width: 900px) {
+                top: 56px;
             }
         }
 
         .fotter3 {
-           background: linear-gradient(to right,  #970e37,#4c2e62);
+            background: linear-gradient(to right, #970e37, #4c2e62);
             top: 51px;
             width: 42%;
             z-index: 3;
-             @media (max-width: 900px) {
-               top: 86px;
+
+            @media (max-width: 900px) {
+                top: 86px;
             }
         }
 
-        .logo-fotter{
-        position: absolute;
-        width: 20%;
-        right: 0;
+        .logo-fotter {
+            position: absolute;
+            right: 10px;
+
+           
         }
 
-        .logo-fotter img{
+        .logo-fotter img {
+            margin: 0 auto;
             height: 100px;
             object-fit: cover;
+            @media (max-width: 900px) {
+               height: 80px;
+            }
         }
 
-          footer hr {
+        footer hr {
             margin-right: 0;
             width: 60%;
             border: none;
@@ -256,7 +265,8 @@
                         temporibus non tempore, quod atque vel.</li>
                     <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus reprehenderit mollitia
                         eum commodi soluta itaque tenetur tempore, perferendis officia ratione totam, odit
-                        consequuntur aspernatur, similique error dolorem sed saepe id?<span style="font-weight: bold;">www.invextarjetas.com.mx</span></li>
+                        consequuntur aspernatur, similique error dolorem sed saepe id?<span
+                            style="font-weight: bold;">www.invextarjetas.com.mx</span></li>
                 </ol>
             </section>
         </main>

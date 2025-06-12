@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landings legales</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 90px;
+            width: 50%;
+            border-bottom-left-radius: 40px;
+
+            @media (max-width: 900px) {
+                height: 30px;
+
+            }
+
+        }
+
+        .capa1 {
+            background: linear-gradient(to right, #4c2e62, #970e37);
+            z-index: 3;
+        }
+
+        .capa2 {
+            background-color: #161334;
+            top: 26px;
+            width: 47%;
+            z-index: 2;
+        }
+
+        .capa3 {
+            background: linear-gradient(to right, #7b66a8, #e1a0b6);
+            top: 51px;
+            width: 42%;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 5%;
+
+        }
+
+        .logo img {
+            height: 100px;
+            object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 60px;
+            }
+        }
+
+        main {
+            flex: 1;
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            background-image: url(/public/invex_marca_agua.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+
+        }
+
+        main .block {
+            position: absolute;
+            top: 0;
+            height: 5px;
+            max-width: 130px;
+            width: 50%;
+            background: linear-gradient(to right, #4c2e63, #9e0a34);
+        }
+
+        main hr {
+            margin: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+
+        main .hr-bottom {
+            width: 100%;
+        }
+
+        .title {
+            margin: 40px 0;
+        }
+
+        .title h1 {
+            color: #a30831;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .title h3{
+            color: #a30831;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        section {
+            font-size: 16px;
+            line-height: 1.3rem;
+            text-align: justify;
+        }
+
+
+        .list {
+            list-style: none;
+            padding: 0;
+            counter-reset: item;
+        }
+
+        .list li {
+            position: relative;
+            padding-left: 40px;
+            counter-increment: item;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .list li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: #a30831;
+            font-weight: 800;
+        }
+
+        footer {
+            position: relative;
+            height: 100px;
+            background-color: white;
+            margin-bottom: 0;
+            margin-top: auto;
+        }
+
+        .capa-fotter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 30%;
+            border-top-right-radius: 40px;
+
+            @media (max-width: 900px) {
+                height: 30px;
+                top: 30px;
+            }
+        }
+
+        .fotter1 {
+            background: linear-gradient(to right, #e1a0b6, #7b66a8);
+
+            z-index: 1;
+        }
+
+        .fotter2 {
+            background-color: #161334;
+            top: 26px;
+            width: 37%;
+            z-index: 2;
+
+            @media (max-width: 900px) {
+                top: 56px;
+            }
+        }
+
+        .fotter3 {
+            background: linear-gradient(to right, #970e37, #4c2e62);
+            top: 51px;
+            width: 42%;
+            z-index: 3;
+
+            @media (max-width: 900px) {
+                top: 86px;
+            }
+        }
+
+        .logo-fotter {
+            position: absolute;
+            right: 10px;
+
+
+        }
+
+        .logo-fotter img {
+            margin: 0 auto;
+            height: 100px;
+            object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 80px;
+            }
+        }
+
+        footer hr {
+            margin-right: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/public/banco_multiva.png" alt="">
+            </div>
+            <div class="banner-header">
+                <div class="capa capa1"></div>
+                <div class="capa capa2"></div>
+                <div class="capa capa3"></div>
+            </div>
+
+        </header>
+        <main>
+            <div class="block"></div>
+            <hr>
+            <div class="title">
+                <h2>Términos y Condiciones</h2>
+                <h1>MULTIVA Recompensas Select</h1>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>Condiciones Generales Banco MULTIVA, S.A., Institución de Banca Múltiple, Grupo Financiero MULTIVA
+                    (MULTIVA) ofrece un Programa de Lealtad a sus clientes, denominado “MULTIVA Recompensas Select”. Al
+                    aceptar su inscripción al Programa “MULTIVA Recompensas Select”, el cliente reconoce y acepta
+                    sujetarse
+                    en todo momento a los Términos y Condiciones que aparecen a continuación y que para tal efecto rigen
+                    el presente programa o los que le sustituyan y al efecto se publiquen en la página:
+                    www.multivarecompensaselect.com.mx , los cuales podrán ser modificados en cualquier momento sin
+                    previo consentimiento y notificación a sus clientes, mismos que serán aplicables para el
+                    tarjetahabiente o
+                    cualquier otro beneficiario del programa “MULTIVA Recompensas Select”. El Programa “MULTIVA
+                    Recompensas Select” está sujeto a cambios sin previo aviso en la acumulación, equivalencia,
+                    transferencia y vigencia de los Puntos, así como en la disponibilidad de las recompensas
+                    mencionadas. El
+                    tarjetahabiente En caso de concurso mercantil, incumplimiento o el proveedor de los productos o
+                    servicios
+                    que constituyen las recompensas del programa entre en proceso de disolución o liquidación, Banco
+                    MULTIVA, S.A., Institución de Banca Múltiple, Grupo Financiero MULTIVA, así como Banco INVEX, S.A.,
+                    Institución de Banca Múltiple, INVEX Grupo Financiero serán responsables de cualquier queja,
+                    reclamación
+                    o demanda por parte del Tarjetahabiente por los conceptos antes mencionados. En caso de que a un
+                    cliente se le llegase a negar alguno de los beneficios del programa al cual tiene derecho, la
+                    responsabilidad de MULTIVA se limitará únicamente a respetar los Puntos acumulados en el Programa: •
+                    Este programa es exclusivo para las Tarjetas de Crédito MULTIVA emitidas en Territorio Nacional. •
+                    Este
+                    beneficio está disponible para los tarjetahabientes que la institución considere. • Los Puntos son
+                    propiedad
+                    de MULTIVA, por lo que el tarjetahabiente no los puede comprar, vender o transferir de ninguna
+                    manera.</p>
+
+            </section>
+            <div class="title">
+                <h3>Acumulación</h3>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>Los tarjetahabientes podrán obtener Puntos únicamente por compras de productos y servicios al
+                    utilizar
+                    la Tarjeta de Crédito MULTIVA, por lo que no aplican, de manera enunciativa más no limitativa para
+                    acumulación de Puntos: pagos de anualidad, disposiciones en efectivo, transferencias de saldo,
+                    cheques de viajero, comisiones por pagos tardío, comisiones por sobregiros, gastos de seguros, otros
+                    cargos relacionados con el servicio de la tarjeta, intereses, pago de impuestos, giros de comercios
+                    dedicados a los juegos de apuesta y azar, comisiones y/o cargos no autorizados o no reconocidos. Los
+                    Puntos del tarjetahabiente se acumularán a razón de: 10 Pesos Mexicanos que se hayan cargado a la
+                    Tarjeta de Crédito MULTIVA como a continuación se muestra: Todas las compras nacionales Todas las
+                    compras internacionales MULTIVA Recompensas Select 1 punto por cada 10 pesos. 1 punto por cada 10
+                    pesos. Los tarjetahabientes podrán adquirir en el mes de su cumpleaños: Bono de bienvenida: Se
+                    aplicará solo un bono de 3,000 puntos a tarjetahabientes que realicen un gasto de $1,000 pesos o más
+                    (no aplica bono por cada $1,000 pesos), (Los $1,000 pesos de consumo son acumulables, es decir, el
+                    cliente puede hacer una o más transacciones hasta completar $1,000 pesos) El tarjetahabiente solo
+                    tiene un periodo de tres meses posteriores a la activación de la tarjeta para realizar el gasto
+                    solicitado y
+                    poder ser candidato a bono, siempre y cuando esté dado de alta en y se dará seguimiento a gasto de
+                    cliente hasta por un periodo de 3 meses. Bono de cumpleaños: Podrás obtener un bono de 2,000 puntos
+                    en el mes de tu cumpleaños una vez que hayas realizado un gasto mínimo de $1,500 pesos, el gasto se
+                    puede realizar en una o más transacciones durante el mes de tu cumpleaños (el bono no es acumulable,
+                    solo se acredita una sola vez durante el mes de cumpleaños). La acumulación de Puntos es diaria y el
+                    cliente puede consultar el saldo actualizado a través de www.multivarecompensaselect.com.mx o
+                    llamando al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la
+                    República. Si el tarjetahabiente cancela la compra realizada con su Tarjeta de Crédito MULTIVA y
+                    generó
+                    Puntos, al momento de la cancelación los puntos serán cancelados de la cuenta. En caso de que el
+                    Tarjetahabiente haya canjeado esos puntos, la cuenta presentará un saldo negativo el cual se
+                    compensará con las siguientes compras efectuadas que generen Puntos. El saldo disponible no refleja
+                    Puntos de las transacciones de las compras que aún no están registradas en el estado de cuenta.
+                    También podrá consultar el saldo de Puntos a través del estado de cuenta mensual de la Tarjeta de
+                    Crédito MULTIVA en donde se informará del saldo de Puntos acumulados, generados y próximos a vencer
+                    a la fecha de corte. Para la acumulación y el canje de Puntos del Programa, es requisito
+                    indispensable que la(s) Tarjeta(s) del (los) cliente(s) esté(n) al corriente en sus pagos y no se
+                    encuentre bloqueada, es
+                    decir, que no tengan pagos vencidos, que se encuentren en reestructura, sobregiro o cualquier
+                    bloqueo
+                    que no permita el uso normal de la Tarjeta de Crédito.</p>
+
+            </section>
+            <div class="title">
+                <h3>Vigencia de los Puntos</h3>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>La vigencia de puntos por acumulación es de dos años a partir de la fecha de acreditación, una vez
+                    vencidos
+                    ya no se pueden reactivar en el saldo disponible. Redención de Puntos Los Puntos disponibles pueden
+                    ser
+                    redimidos por diferentes beneficios del catálogo como lo son artículos, certificados, viajes,
+                    transferencia de
+                    puntos, los cuales podrá consultar en el catálogo publicado en la página:
+                    www.multivarecompensaselect.com.mx, o llamando al 6720-1747 desde el D.F. y Área Metropolitana y al
+                    01800
+                    300-1122 desde el Interior de la República. Una vez realizado el canje de Puntos por alguno de los
+                    beneficios
+                    del programa no se aceptan cancelaciones. Los Puntos únicamente pueden ser canjeados con base en el
+                    saldo de Puntos disponibles y serán descontados de inmediato una vez que hayan sido utilizados.</p>
+
+            </section>
+            <div class="title">
+                <h3>Artículos</h3>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>Una vez solicitada la redención del artículo, no se aceptan cambios ni devoluciones (a excepción de
+                    defecto de fábrica del producto). Todos los precios sin excepción alguna están sujetos a cambio sin
+                    previo
+                    aviso. Los productos y servicios que aquí se anuncian son exclusiva responsabilidad de Master
+                    Loyalty
+                    Group, S.A. DE C.V. (Master Loyalty Group). Master Loyalty Group es un distribuidor de los productos
+                    que se
+                    ofrecen en este sitio. Por lo tanto, con el objeto de brindarle un mejor servicio, Master Loyalty
+                    Group
+                    interviene para hacer efectiva la garantía en caso necesario, siendo el fabricante el único
+                    responsable del
+                    cumplimiento de la misma. El tarjetahabiente acepta liberar a MULTIVA, Master Loyalty Group y sus
+                    proveedores que participan, de cualquier responsabilidad por lesiones, accidentes, pérdidas,
+                    reclamaciones, gastos o daños sufridos por el tarjetahabiente, asociados a cualquier beneficio o
+                    recompensa o por el uso de la recompensa mientras esté participando en este Programa MULTIVA
+                    Recompensas Select. Debido al cambio de tecnología, los modelos, colores y configuraciones de los
+                    productos podrán cambiar, la foto que aparece en el catálogo es solo ilustrativa y de referencia. En
+                    caso de
+                    que así sea, se entregará un producto sustituto con características similares o mejores con previo
+                    aviso y
+                    autorización del Tarjetahabiente. Todos los productos y servicios de este Programa están sujetos a
+                    del proveedor. El cliente podrá obtener un premio de mercancía canjeando el número exacto de Puntos
+                    requeridos o canjeando una parte proporcional en Puntos, cuando así esté disponible, más un monto en
+                    dinero que deberá ser pagado con su Tarjeta de Crédito MULTIVA participante. El monto en dinero,
+                    cuando
+                    así se especifique, podrá ser pagado en mensualidades sin intereses que aparecerán en el estado de
+                    cuenta mensual del tarjetahabiente. Todos los artículos y servicios ofrecidos en el catálogo de
+                    premios
+                    incluyen impuestos aplicables y cargos por manejo y por envío. El envío de las mercancías tomará un
+                    periodo máximo de 15 días hábiles a partir de la fecha de canje. Los artículos del catálogo están
+                    sujetos a
+                    disponibilidad y pueden ser cambiados sin previo aviso. Es responsabilidad del cliente abrir el
+                    artículo y
+                    revisar que esté en buen estado desde el momento de la recepción del mismo. Si el paquete se
+                    encontrara en malas condiciones o dañado en el momento de la recepción no se debe recibir y el
+                    tarjetahabiente deberá reportarlo inmediatamente al 6720-1747 desde el D.F. y Área Metropolitana y
+                    al
+                    01800 300-1122 desde el Interior de la República, en un lapso no mayor a 3 días naturales a partir
+                    de la
+                    fecha de recepción. Es necesario conservar el empaque original del artículo y el de paquetería, ya
+                    que
+                    para hacer la reclamación se podrán requerir fotos del artículo. Las devoluciones de artículos sólo
+                    procederán en los casos en los que la mercancía se encuentre dañada por manejo de mensajería o en
+                    caso de recibir artículos incorrectos, para que la devolución tenga lugar, los productos deberán ser
+                    regresados con el empaque y los accesorios originales. Por lo anterior, es responsabilidad del
+                    tarjetahabiente proporcionar todos los datos correctos y completos para recepción de sus productos.
+                    Los
+                    productos no podrán ser enviados o entregados en apartados postales. Todos los productos ofrecidos
+                    cuentan con la garantía del fabricante y se podrá hacer válida en caso de fallas naturales o defecto
+                    de
+                    fabricación directamente con el proveedor del producto. La garantía del producto se cancelará de
+                    manera automática en cuanto se haga mal uso de éste. Ni MULTIVA, ni Master Loyalty Group ni ninguno
+                    de
+                    los proveedores asumen responsabilidad alguna por la calidad o condición de las mercancías. En caso
+                    de que no haya disponibilidad de un artículo canjeado, se hará llegar a los tarjetahabientes una
+                    propuesta de un artículo sustituto con características similares o mejores; cuando la propuesta no
+                    sea
+                    aceptada, se procederá con la cancelación y restauración de Puntos. Los tarjetahabientes cuentan con
+                    20 días hábiles para confirmar su respuesta sobre la propuesta a partir de la fecha en que se les
+                    envía la
+                    notificación por correo o a través del Centro de Atención Telefónica, en caso de no recibir
+                    respuesta en
+                    este periodo, la redención se cancelará y se regresarán los puntos a la cuenta.”</p>
+
+            </section>
+            <div class="title">
+                <h3>Cancelaciones</h3>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>Los boletos de avión, beneficios de viaje, mercancías, certificados de regalo y cualquier beneficio
+                    publicado en el catálogo de premios del programa se encuentran sujetos a disponibilidad y pueden
+                    aplicar ciertas restricciones. En caso de que un tarjetahabiente decida separarse del Programa
+                    MULTIVA
+                    Recompensas Select y/o cancelar su Tarjeta de Crédito, los Puntos acumulados en la cuenta serán
+                    cancelados y no podrán ser reactivados, por lo que se pierden de forma inmediata e irrevocable. En
+                    caso
+                    de que la Tarjeta de Crédito sea cancelada por parte de MULTIVA o del tarjetahabiente, los Puntos
+                    acumulados en la cuenta serán cancelados y no podrán ser reactivados, por lo que se pierden de forma
+                    inmediata e irrevocable. MULTIVA se reserva el derecho de otorgar Puntos adicionales a
+                    tarjetahabientes
+                    seleccionados. MULTIVA se reserva el derecho de descalificar a cualquier tarjetahabiente de
+                    participar en
+                    el Programa e invalidar todos los Puntos acumulados debido a abuso, fraude, o violación a los
+                    términos y
+                    condiciones del Programa y el Banco puede tomar esta determinación a su propia discreción. MULTIVA
+                    se
+                    reserva el derecho de modificar los términos y condiciones del Programa MULTIVA Recompensas Select o
+                    de cancelar, modificar o suspender temporal o definitivamente el Programa, así como tiene la opción
+                    de
+                    restringir, limitar, terminar o cancelar la redención de los Puntos en cualquier momento sin previo
+                    aviso y
+                    sin responsabilidad alguna.</p>
+
+            </section>
+
+        </main>
+        <footer>
+            <hr>
+            <div class="container-fotter">
+                <div class="capa-fotter fotter1"></div>
+                <div class="capa-fotter fotter2"></div>
+                <div class="capa-fotter fotter3"></div>
+            </div>
+            <div class="logo-fotter">
+                <img src="/public/logo:footer.png" alt="">
+            </div>
+        </footer>
+    </body>
+</body>
+
+</html>

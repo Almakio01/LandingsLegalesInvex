@@ -1,11 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landings legales</title>
 </head>
+
 <body>
-    
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 90px;
+            width: 50%;
+            border-bottom-left-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                
+            }
+          
+        }
+
+        .capa1 {
+            background: linear-gradient(to right, #4c2e62, #970e37);
+            z-index: 3;
+        }
+
+        .capa2 {
+            background-color: #161334;
+            top: 26px;
+            width: 47%;
+            z-index: 2;
+        }
+
+        .capa3 {
+            background: linear-gradient(to right, #7b66a8, #e1a0b6);
+            top: 51px;
+            width: 42%;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 5%;
+
+        }
+
+        .logo img {
+            height: 100px;
+            object-fit: cover;
+        }
+
+        main {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            background-image: url(/public/invex_marca_agua.png);
+               background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50%;
+
+        }
+
+        main .block {
+            position: absolute;
+            top: 0;
+            height: 5px;
+            max-width: 130px;
+            width: 50%;
+            background: linear-gradient(to right, #4c2e63, #9e0a34);
+        }
+
+        main hr {
+            margin-left: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+
+        main .hr-bottom {
+            width: 100%;
+        }
+
+        .title h1 {
+            color: #a30831;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        section {
+            font-size: 16px;
+            line-height: 1.3rem;
+        }
+
+        /* .list{
+            color: #a30831;
+            font-weight: 800;
+        }
+        .list li{
+            color: black
+        } */
+
+        .list {
+            list-style: none;
+            padding: 0;
+            counter-reset: item;
+        }
+
+        .list li {
+            position: relative;
+            padding-left: 40px;
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+
+        .list li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: #a30831;
+            font-weight: 800;
+        }
+
+        footer {
+            position: relative;
+            height: 100px;
+            background-color: white;
+            margin-bottom: 0;
+        }
+
+         .capa-fotter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 30%;
+            border-top-right-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                top: 30px;
+            }
+        }
+
+        .fotter1 {
+             background: linear-gradient(to right, #e1a0b6, #7b66a8);
+            
+            z-index: 1;
+        }
+
+        .fotter2 {
+            background-color: #161334;
+            top: 26px;
+            width: 37%;
+            z-index: 2;
+             @media (max-width: 900px) {
+               top: 56px;
+            }
+        }
+
+        .fotter3 {
+           background: linear-gradient(to right,  #970e37,#4c2e62);
+            top: 51px;
+            width: 42%;
+            z-index: 3;
+             @media (max-width: 900px) {
+               top: 86px;
+            }
+        }
+
+        .logo-fotter{
+        position: absolute;
+        width: 20%;
+        right: 0;
+        }
+
+        .logo-fotter img{
+            height: 100px;
+            object-fit: cover;
+        }
+
+          footer hr {
+            margin-right: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/public/logo_header.png" alt="">
+            </div>
+            <div class="banner-header">
+                <div class="capa capa1"></div>
+                <div class="capa capa2"></div>
+                <div class="capa capa3"></div>
+            </div>
+
+        </header>
+        <main>
+            <div class="block"></div>
+            <hr>
+            <div class="title">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+                <h1>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas illo aliquam perspiciatis
+                    autem dignissimos accusamus ipsam error est consequatur minus laudantium aperiam culpa quos
+                    reprehenderit, veritatis fuga, eaque odio voluptatem.</p>
+                <ol class="list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eveniet suscipit dolorem
+                        fugiat, minima itaque commodi amet sed soluta, a magnam quod dolorum alias? Ullam, eos
+                        nulla. Quasi, omnis veniam?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tenetur sed et alias
+                        corporis, fugiat maiores obcaecati neque magni quod repellendus repudiandae dolorem repellat
+                        sapiente nisi suscipit! Iste, reiciendis consequatur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perferendis qui commodi
+                        laborum, nobis aperiam unde voluptates eos, veritatis, minus nulla necessitatibus quod
+                        officiis illum maiores dicta hic harum vero!</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sapiente obcaecati
+                        consectetur perspiciatis, hic reiciendis repellat quia perferendis maxime, eveniet suscipit
+                        rem dignissimos, nobis cumque fuga tempora ab minima voluptas? </li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptatem assumenda illum,
+                        totam, modi placeat corrupti illo fugit ex nisi ipsum sed exercitationem vel adipisci
+                        incidunt suscipit ea, obcaecati itaque!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum a, obcaecati
+                        voluptates inventore ipsa quidem explicabo dignissimos eos earum similique cupiditate ex!
+                        Enim, dolores! Eius non hic rem iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, mollitia a possimus dignissimos
+                        laudantium fugiat sapiente. Quas voluptas omnis optio dignissimos soluta nihil blanditiis et
+                        placeat! Voluptatibus, perspiciatis? Nobis, odit?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo cupiditate est
+                        maiores, ea dolorem. Quas excepturi ea quae dolore modi fugiat, exercitationem doloribus
+                        temporibus non tempore, quod atque vel.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus reprehenderit mollitia
+                        eum commodi soluta itaque tenetur tempore, perferendis officia ratione totam, odit
+                        consequuntur aspernatur, similique error dolorem sed saepe id?<span style="font-weight: bold;">www.invextarjetas.com.mx</span></li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <div class="container-fotter">
+                <div class="capa-fotter fotter1"></div>
+                <div class="capa-fotter fotter2"></div>
+                <div class="capa-fotter fotter3"></div>
+            </div>
+            <div class="logo-fotter">
+                <img src="/public/logo_header.png" alt="">
+            </div>
+        </footer>
+    </body>
 </body>
+
 </html>

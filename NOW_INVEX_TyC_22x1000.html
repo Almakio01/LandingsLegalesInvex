@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landings legales</title>
-</head>
-
-<body>
     <style>
         body {
             margin: 0;
             height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -26,11 +25,12 @@
             height: 90px;
             width: 50%;
             border-bottom-left-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
-                
+
             }
-          
+
         }
 
         .capa1 {
@@ -62,16 +62,21 @@
         .logo img {
             height: 100px;
             object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 60px;
+            }
         }
 
         main {
+            flex: 1;
             position: relative;
             margin: 0 auto;
             width: 90%;
             background-image: url(/public/invex_marca_agua.png);
-               background-position: center;
-                background-repeat: no-repeat;
-                background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
 
         }
 
@@ -85,7 +90,7 @@
         }
 
         main hr {
-            margin-left: 0;
+            margin: 0;
             width: 60%;
             border: none;
             background: #ededed;
@@ -96,24 +101,33 @@
             width: 100%;
         }
 
+        .title {
+            margin: 40px 0;
+        }
+
         .title h1 {
             color: #a30831;
             font-size: 30px;
             font-weight: 800;
         }
 
+        h3 {
+            color: #a30831;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
         section {
             font-size: 16px;
             line-height: 1.3rem;
+            text-align: justify;
         }
 
-        /* .list{
-            color: #a30831;
-            font-weight: 800;
+        .acelerador_volaris {
+            margin: 10px auto;
+            width: 90%;
+            max-width: 900px;
         }
-        .list li{
-            color: black
-        } */
 
         .list {
             list-style: none;
@@ -126,6 +140,7 @@
             padding-left: 40px;
             counter-increment: item;
             margin-bottom: 10px;
+            text-align: justify;
         }
 
         .list li::before {
@@ -141,24 +156,26 @@
             height: 100px;
             background-color: white;
             margin-bottom: 0;
+            margin-top: auto;
         }
 
-         .capa-fotter {
+        .capa-fotter {
             position: absolute;
             top: 0;
             left: 0;
             height: 60px;
             width: 30%;
             border-top-right-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
                 top: 30px;
             }
         }
 
         .fotter1 {
-             background: linear-gradient(to right, #e1a0b6, #7b66a8);
-            
+            background: linear-gradient(to right, #e1a0b6, #7b66a8);
+
             z-index: 1;
         }
 
@@ -167,33 +184,41 @@
             top: 26px;
             width: 37%;
             z-index: 2;
-             @media (max-width: 900px) {
-               top: 56px;
+
+            @media (max-width: 900px) {
+                top: 56px;
             }
         }
 
         .fotter3 {
-           background: linear-gradient(to right,  #970e37,#4c2e62);
+            background: linear-gradient(to right, #970e37, #4c2e62);
             top: 51px;
             width: 42%;
             z-index: 3;
-             @media (max-width: 900px) {
-               top: 86px;
+
+            @media (max-width: 900px) {
+                top: 86px;
             }
         }
 
-        .logo-fotter{
-        position: absolute;
-        width: 20%;
-        right: 0;
+        .logo-fotter {
+            position: absolute;
+            right: 10px;
+
+
         }
 
-        .logo-fotter img{
+        .logo-fotter img {
+            margin: 0 auto;
             height: 100px;
             object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 80px;
+            }
         }
 
-          footer hr {
+        footer hr {
             margin-right: 0;
             width: 60%;
             border: none;
@@ -201,86 +226,101 @@
             height: 2px;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/pdf1/hade.png" alt="">
-            </div>
-            <div class="banner-header">
-                <div class="capa capa1"></div>
-                <div class="capa capa2"></div>
-                <div class="capa capa3"></div>
-            </div>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/pdf1/hade.png" alt="">
+        </div>
+        <div class="banner-header">
+            <div class="capa capa1"></div>
+            <div class="capa capa2"></div>
+            <div class="capa capa3"></div>
+        </div>
 
-        </header>
-        <main>
-            <div class="block"></div>
-            <hr>
-            <div class="title">
-                <h2>Términos y Condiciones </h2>
-                <h1>
-                    22 x 1000.</h1>
-            </div>
-            <hr class="hr-bottom">
+    </header>
+    <main>
+        <div class="block"></div>
+        <hr>
+        <div class="title">
+            <h2>Términos y Condiciones </h2>
+            <h1>
+                22 x 1000.</h1>
+        </div>
+        <hr class="hr-bottom">
 
-            <section>
-               
-                <ol class="list">
-                    <li>Bajo este programa se podrán diferir a Meses con Intereses las compras realizadas durante la
-vigencia de la promoción a partir de $1,000 pesos.</li>
-<br>
-                    <li>El período para diferir las compras bajo la promoción de 22 x 1,000 será hasta de 8 días naturales posteriores al término de la vigencia para realizar las compras.</li>
-                    <br>
-                    <li>LLos $22 pesos de interés son antes del IVA y son el promedio mensual durante el plazo solicitado para pagar.</li>
-                    <br>
-                    <li>LEl pago mensual es fijo durante todo el plazo de la promoción, este pago incluye el cálculo de los intereses y el monto de capital a cubrir en el mes que corresponda. El pago mensual no incluye el I.V.A. de los intereses del mes. </li>
-                    <br>
-                    <li>La oferta para diferir a Meses con Intereses es por invitación a través de mensajes de texto al celular (SMS), vía mailing y oferta personalizada en el portal INVEX Tarjetas.</li>
-                    <br>
-                    <li>El diferimiento de las compras se realizará al plazo indicado por el cliente siempre y cuando éste se mantenga al corriente en sus pagos y con buen historial crediticio.</li>
-                    <br>
-                    <li>En caso de acumular 3 meses vencidos (o falta de pago) el cliente está de acuerdo en que el monto total que se encuentre en la promoción de Meses con Intereses pasará a la tasa de producto que el cliente tenga vigente en su Tarjeta de Crédito, por lo que generará intereses a dicha tasa de producto.</li>
-                    <br>
-                    <li>Los canales para solicitar el diferimiento de las compras son comunicándose al Call Center de Tarjetas INVEX, por medio de la App denominada "INVEX Control" o bien vía portal INVEX Tarjetas con ingreso manual del tarjetahabiente.</li>
-                    <br>
-                    <li>El cliente podrá elegir el plazo para pagar entre 6, 12, 18 o 24 Meses con Intereses.</li>
-                    <br>
-                    <li>La vigencia de esta promoción es por tiempo determinado, por lo que Banco INVEX podrá negar el
-diferimiento de las compras una vez vencida dicha promoción.</li>
-<br>
-<h1 class="title" style="color: #a30831;" >Promoción 22x1000</h1>
-<hr>
-<h2 class="title" style="color: #a30831;">Para compras a 6 meses</h2>
- <p>CAT PROMEDIO 54.0% sin IVA. Informativo. Tasa anual fija del 43.94%.</p>
- <br>
-<h2 class="title" style="color: #a30831;">Para compras a 12 meses</h2>
-       <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p> 
-       <br>       
-       <h2 class="title" style="color: #a30831;">Para compras a 18 meses</h2>
-       <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p> 
-       <br>  
-       <h2 class="title" style="color: #a30831;">Para compras a 24 meses</h2>
-       <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%..</p> 
-       <br>       
+        <section>
 
-                    <p>Fecha de cálculo: Junio 2024, Promoción válida en la República Mexicana. Teléfonos de contacto de CONDUSEF para la Ciudad de México y Zona Metropolitana 5340 0999, en el interior de la República sin costo 01 800 999 8080, correo electrónico: asesoria@condusef.gob.mx / Unidad Especializada de Atención de Usuarios 4000 4046, correo electrónico: uneap@invex.com / Aplican restricciones. Consulta comisiones y requisitos de contratación<span style="font-weight: bold;">www.invextarjetas.com.mx</span></p>
-                </ol>
-            </section>
-        </main>
-        <footer>
-            <hr>
-            <div class="container-fotter">
-                <div class="capa-fotter fotter1"></div>
-                <div class="capa-fotter fotter2"></div>
-                <div class="capa-fotter fotter3"></div>
-            </div>
-            <div class="logo-fotter">
-                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/pdf1/imagenn1.png" alt="">
-            </div>
-        </footer>
-    </body>
+            <ol class="list">
+                <li>Bajo este programa se podrán diferir a Meses con Intereses las compras realizadas durante la
+                    vigencia de la promoción a partir de $1,000 pesos.</li>
+                <br>
+                <li>El período para diferir las compras bajo la promoción de 22 x 1,000 será hasta de 8 días naturales
+                    posteriores al término de la vigencia para realizar las compras.</li>
+                <br>
+                <li>LLos $22 pesos de interés son antes del IVA y son el promedio mensual durante el plazo solicitado
+                    para pagar.</li>
+                <br>
+                <li>LEl pago mensual es fijo durante todo el plazo de la promoción, este pago incluye el cálculo de los
+                    intereses y el monto de capital a cubrir en el mes que corresponda. El pago mensual no incluye el
+                    I.V.A. de los intereses del mes. </li>
+                <br>
+                <li>La oferta para diferir a Meses con Intereses es por invitación a través de mensajes de texto al
+                    celular (SMS), vía mailing y oferta personalizada en el portal INVEX Tarjetas.</li>
+                <br>
+                <li>El diferimiento de las compras se realizará al plazo indicado por el cliente siempre y cuando éste
+                    se mantenga al corriente en sus pagos y con buen historial crediticio.</li>
+                <br>
+                <li>En caso de acumular 3 meses vencidos (o falta de pago) el cliente está de acuerdo en que el monto
+                    total que se encuentre en la promoción de Meses con Intereses pasará a la tasa de producto que el
+                    cliente tenga vigente en su Tarjeta de Crédito, por lo que generará intereses a dicha tasa de
+                    producto.</li>
+                <br>
+                <li>Los canales para solicitar el diferimiento de las compras son comunicándose al Call Center de
+                    Tarjetas INVEX, por medio de la App denominada "INVEX Control" o bien vía portal INVEX Tarjetas con
+                    ingreso manual del tarjetahabiente.</li>
+                <br>
+                <li>El cliente podrá elegir el plazo para pagar entre 6, 12, 18 o 24 Meses con Intereses.</li>
+                <br>
+                <li>La vigencia de esta promoción es por tiempo determinado, por lo que Banco INVEX podrá negar el
+                    diferimiento de las compras una vez vencida dicha promoción.</li>
+                <br>
+                <h1 class="title" style="color: #a30831;">Promoción 22x1000</h1>
+                <hr>
+                <h2 class="title" style="color: #a30831;">Para compras a 6 meses</h2>
+                <p>CAT PROMEDIO 54.0% sin IVA. Informativo. Tasa anual fija del 43.94%.</p>
+                <br>
+                <h2 class="title" style="color: #a30831;">Para compras a 12 meses</h2>
+                <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p>
+                <br>
+                <h2 class="title" style="color: #a30831;">Para compras a 18 meses</h2>
+                <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p>
+                <br>
+                <h2 class="title" style="color: #a30831;">Para compras a 24 meses</h2>
+                <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%..</p>
+                <br>
+
+                <p>Fecha de cálculo: Junio 2024, Promoción válida en la República Mexicana. Teléfonos de contacto de
+                    CONDUSEF para la Ciudad de México y Zona Metropolitana 5340 0999, en el interior de la República sin
+                    costo 01 800 999 8080, correo electrónico: asesoria@condusef.gob.mx / Unidad Especializada de
+                    Atención de Usuarios 4000 4046, correo electrónico: uneap@invex.com / Aplican restricciones.
+                    Consulta comisiones y requisitos de contratación<span
+                        style="font-weight: bold;">www.invextarjetas.com.mx</span></p>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="container-fotter">
+            <div class="capa-fotter fotter1"></div>
+            <div class="capa-fotter fotter2"></div>
+            <div class="capa-fotter fotter3"></div>
+        </div>
+        <div class="logo-fotter">
+            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/pdf1/imagenn1.png" alt="">
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landings legales</title>
-</head>
-
-<body>
     <style>
         body {
             margin: 0;
             height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -26,11 +25,12 @@
             height: 90px;
             width: 50%;
             border-bottom-left-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
-                
+
             }
-          
+
         }
 
         .capa1 {
@@ -62,16 +62,21 @@
         .logo img {
             height: 100px;
             object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 40px;
+            }
         }
 
         main {
+            flex: 1;
             position: relative;
             margin: 0 auto;
             width: 90%;
             background-image: url(/public/invex_marca_agua.png);
-               background-position: center;
-                background-repeat: no-repeat;
-                background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
 
         }
 
@@ -85,7 +90,7 @@
         }
 
         main hr {
-            margin-left: 0;
+            margin: 0;
             width: 60%;
             border: none;
             background: #ededed;
@@ -96,24 +101,38 @@
             width: 100%;
         }
 
-        .title h1 {
+        .title {
+            margin: 40px 0;
+        }
+
+       .title h1 {
             color: #a30831;
             font-size: 30px;
             font-weight: 800;
+             @media (max-width: 900px) {
+                font-size: 24px;
+            }
+        }
+        .title h3{
+            color: #a30831;
+            font-size: 20px;
+            font-weight: 800;
+             @media (max-width: 900px) {
+                font-size: 20px;
+            }
         }
 
         section {
             font-size: 16px;
             line-height: 1.3rem;
+            text-align: justify;
         }
 
-        /* .list{
-            color: #a30831;
-            font-weight: 800;
+        .acelerador_volaris {
+            margin: 10px auto;
+            width: 90%;
+            max-width: 900px;
         }
-        .list li{
-            color: black
-        } */
 
         .list {
             list-style: none;
@@ -126,6 +145,7 @@
             padding-left: 40px;
             counter-increment: item;
             margin-bottom: 10px;
+            text-align: justify;
         }
 
         .list li::before {
@@ -141,24 +161,26 @@
             height: 100px;
             background-color: white;
             margin-bottom: 0;
+            margin-top: auto;
         }
 
-         .capa-fotter {
+        .capa-fotter {
             position: absolute;
             top: 0;
             left: 0;
             height: 60px;
             width: 30%;
             border-top-right-radius: 40px;
-             @media (max-width: 900px) {
+
+            @media (max-width: 900px) {
                 height: 30px;
                 top: 30px;
             }
         }
 
         .fotter1 {
-             background: linear-gradient(to right, #e1a0b6, #7b66a8);
-            
+            background: linear-gradient(to right, #e1a0b6, #7b66a8);
+
             z-index: 1;
         }
 
@@ -167,33 +189,41 @@
             top: 26px;
             width: 37%;
             z-index: 2;
-             @media (max-width: 900px) {
-               top: 56px;
+
+            @media (max-width: 900px) {
+                top: 56px;
             }
         }
 
         .fotter3 {
-           background: linear-gradient(to right,  #970e37,#4c2e62);
+            background: linear-gradient(to right, #970e37, #4c2e62);
             top: 51px;
             width: 42%;
             z-index: 3;
-             @media (max-width: 900px) {
-               top: 86px;
+
+            @media (max-width: 900px) {
+                top: 86px;
             }
         }
 
-        .logo-fotter{
-        position: absolute;
-        width: 20%;
-        right: 0;
+        .logo-fotter {
+            position: absolute;
+            right: 10px;
+
+
         }
 
-        .logo-fotter img{
+        .logo-fotter img {
+            margin: 0 auto;
             height: 100px;
             object-fit: cover;
+
+            @media (max-width: 900px) {
+                height: 80px;
+            }
         }
 
-          footer hr {
+        footer hr {
             margin-right: 0;
             width: 60%;
             border: none;
@@ -201,125 +231,325 @@
             height: 2px;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW_INVEX_TyC_CI_Banco/hade.png" alt="">
-            </div>
-            <div class="banner-header">
-                <div class="capa capa1"></div>
-                <div class="capa capa2"></div>
-                <div class="capa capa3"></div>
-            </div>
 
-        </header>
-        <main>
-            <div class="block"></div>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW_INVEX_TyC_CI_Banco/hade.png" alt="">
+        </div>
+        <div class="banner-header">
+            <div class="capa capa1"></div>
+            <div class="capa capa2"></div>
+            <div class="capa capa3"></div>
+        </div>
+
+    </header>
+    <main>
+        <div class="block"></div>
+        <hr>
+        <div class="title">
+            <h2>Términos y Condiciones </h2>
+            <h1>
+                CI Banco Recompensas Índigo</h1>
+        </div>
+        <hr class="hr-bottom">
+
+        <section>
             <hr>
-            <div class="title">
-                <h2>Términos y Condiciones </h2>
-                <h1>
-                    CI Banco Recompensas Índigo</h1>
-            </div>
-            <hr class="hr-bottom">
-
-            <section>
-                <hr>
- <p>Condiciones Generales CI BANCO ofrece un Programa de Lealtad a sus clientes, denominado “CI Banco Recompensas Índigo”. Al aceptar su inscripción al Programa CI Recompensas Índigo, el cliente reconoce y acepta sujetarse en todo momento a los Términos y Condiciones que aparecen a continuación o los que le sustituyan y al efecto se publiquen en la página: www.cibancorecompensaindigo.com.mx, los cuales podrán ser modificados en cualquier momento y regirán para el tarjetahabiente o cualquier otro beneficiario. El Programa CI Banco Recompensas Índigo está sujeto a cambios sin previo aviso en la acumulación, equivalencia, transferencia y vigencia de los Puntos, así como en la disponibilidad de las recompensas mencionadas. En caso de la quiebra o incumplimiento por parte de cualquier proveedor de productos o servicios que constituyen las recompensas del programa, ni CI BANCO, ni cualquiera de los Proveedores, ni cualquier otro vendedor de productos y servicios será responsable por dicha quiebra o incumplimiento. En caso de que a un cliente se le negase alguno de los beneficios del programa al cual tiene derecho, la responsabilidad de CI BANCO se limitará a respetar los Puntos acumulados en el Programa: • Este programa es exclusivo para las Tarjetas de Crédito CI BANCO emitidas en Territorio Nacional. • Este beneficio está disponible para los tarjetahabientes y los que la institución considere. • Los Puntos son propiedad de CI BANCO, por lo que el tarjetahabiente no los puede comprar, vender o transferir de ninguna manera.</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Acumulación</h2>
- <p>Los tarjetahabientes podrán obtener Puntos únicamente por compras de productos y servicios al utilizar la Tarjeta de Crédito CI BANCO, por lo que no aplican, de manera enunciativa más no limitativa para acumulación de Puntos: pagos de anualidad, disposiciones en efectivo, transferencias de saldo, cheques de viajero, comisiones por pagos tardío, comisiones por sobregiros, gastos de seguros, otros cargos relacionados con el servicio de la tarjeta, intereses, pago de impuestos, giros de comercios dedicados a los juegos de apuesta y azar, comisiones y/o cargos no autorizados o no reconocidos.
-Los Puntos del tarjetahabiente se acumularán a razón de: 10 Pesos Mexicanos que se hayan cargado a la Tarjeta de Crédito CI BANCO como a continuación se muestra: Recompensas Índigo Todas las compras nacionales 2 Puntos por cada 10 pesos. Todas las compras internacionales 3 Puntos por cada 10 pesos. Mes de Bienvenida Bono de 3,000 pts por cada 10,000 pesos facturados durante los 3 primeros meses posteriores a la activación de la tarjeta. La acumulación de Puntos es diaria y el cliente puede consultar el saldo actualizado a través de www.cibancorecompensaindigo.com.mx o llamando al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la República. Si el tarjetahabiente cancela la compra realizada con su Tarjeta de Crédito CI BANCO y generó Puntos, al momento de la cancelación los puntos serán cancelados de la cuenta. En caso de que el Tarjetahabiente haya canjeado esos puntos, la cuenta presentará un saldo negativo el cual se compensará con las siguientes compras efectuadas que generen Puntos. El saldo disponible no refleja Puntos de las transacciones de las compras que aún no están registradas en el estado de cuenta. Para la acumulación y el canje de Puntos del Programa, es requisito indispensable que la(s) Tarjeta(s) del (los) cliente(s) esté(n) al corriente en sus pagos y no se encuentre bloqueada, es decir, que no tengan pagos vencidos, que se encuentren en reestructura, sobregiro o cualquier bloqueo que no permita el uso normal de la Tarjeta de Crédito.</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Vigencia de los Puntos</h2>
- <p>En caso de no utilizar los Puntos, expirarán a los dos años a partir de la fecha de acreditación, una vez vencidos ya no se pueden reactivar en el saldo disponible. Unificación de Puntos entre cuentas Propias El cliente podrá Unificar los Puntos de diferentes cuentas siempre y cuando él sea el titular de las Tarjetas de Crédito. Para solicitarlo deberá llamar al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la República. Redención de Puntos Los Puntos disponibles pueden ser redimidos por diferentes beneficios del catálogo como lo son artículos, certificados, viajes, transferencia de puntos, los cuales podrá consultar en el catálogo publicado en la página: www.cibancorecompensaindigo.com.mx,, o llamando al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la República. Una vez realizado el canje de Puntos por alguno de los beneficios del programa no se aceptan cancelaciones. Los Puntos únicamente pueden ser canjeados con base en el saldo de Puntos disponibles y serán descontados de inmediato una vez que hayan sido utilizados.</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Artículos</h2>
- <p>Una vez solicitada la redención del artículo, no se aceptan cambios ni devoluciones (a excepción de defecto de fábrica del producto). Todos los precios sin excepción alguna están sujetos a cambio sin previo aviso. Los productos y servicios que aquí se anuncian son exclusiva responsabilidad de Master Loyalty Group. Master Loyalty Group es un distribuidor de los productos que se ofrecen en este sitio. Por lo tanto, con el objeto de brindarle un mejor servicio, Master Loyalty Group interviene para hacer efectiva la garantía en caso necesario, siendo el fabricante el único responsable del cumplimiento de la misma. El tarjetahabiente acepta liberar a CI BANCO, Master Loyalty Group y sus proveedores que participan, de cualquier responsabilidad por lesiones, accidentes, pérdidas, reclamaciones, gastos o daños sufridos por el tarjetahabiente, asociados a cualquier beneficio o recompensa o por el uso de la recompensa mientras esté participando en este Programa CI Banco Recompensas Índigo. Debido al cambio de tecnología, los modelos, colores y configuraciones de los productos podrán cambiar, la foto que aparece en el catálogo es solo ilustrativa y de referencia. En caso de que así sea, se entregará un producto sustituto con características similares o mejores con previo aviso y autorización del Tarjetahabiente. Todos los productos y servicios de este Programa están sujetos a restricciones de los proveedores y/o disponibilidad. Todos los productos incluyen exclusivamente garantía del proveedor. El cliente podrá obtener un premio de mercancía canjeando el número exacto de Puntos requeridos o canjeando una parte proporcional en Puntos, cuando así esté disponible, más un monto en dinero que deberá ser pagado con su Tarjeta de Crédito CI BANCO participante. El monto en dinero, cuando así se especifique, podrá ser pagado en mensualidades sin intereses que aparecerán en el estado de cuenta mensual del tarjetahabiente. Todos los artículos y servicios ofrecidos en el catálogo de premios incluyen impuestos aplicables y cargos por manejo y por envío. El envío de las mercancías tomará un periodo máximo de 15 días hábiles a partir de la fecha de canje. Los artículos del catálogo están sujetos a disponibilidad y pueden ser cambiados sin previo aviso. Es responsabilidad del cliente abrir el artículo y revisar que esté en buen estado desde el momento de la recepción del mismo. Si el paquete se encontrara en malas condiciones o dañado en el momento de la recepción no se debe recibir y el tarjetahabiente deberá reportarlo inmediatamente al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la República, en un lapso no mayor a 3 días naturales a partir de la fecha de recepción. Es necesario conservar el empaque original del artículo y el de paquetería, ya que para hacer la reclamación se podrán requerir fotos del artículo. Las devoluciones de artículos sólo procederán en los casos en los que la mercancía se encuentre dañada por manejo de mensajería o en caso de recibir artículos incorrectos, para que la devolución tenga lugar, los productos deberán ser regresados con el empaque y los accesorios originales. Por lo anterior, es responsabilidad del tarjetahabiente proporcionar todos los datos correctos y completos para recepción de sus productos.
-Los productos no podrán ser enviados o entregados en apartados postales. Todos los productos ofrecidos cuentan con la garantía del fabricante y se podrá hacer válida en caso de fallas naturales o defecto de fabricación directamente con el proveedor del producto. La garantía del producto se cancelará de manera automática en cuanto se haga mal uso de éste. Ni CI BANCO, ni Master Loyalty Group ni ninguno de los proveedores asumen responsabilidad alguna por la calidad o condición de las mercancías. En caso de que no haya disponibilidad de un artículo canjeado, se hará llegar a los tarjetahabientes una propuesta de un artículo sustituto con características similares o mejores; cuando la propuesta no sea aceptada, se procederá con la cancelación y restauración de Puntos. Los tarjetahabientes cuentan con 20 días hábiles para confirmar su respuesta sobre la propuesta a partir de la fecha en que se les envía la notificación por correo o a través del Centro de Atención Telefónica, en caso de no recibir respuesta en este periodo, la redención se cancelará y se regresarán los puntos a la cuenta.”</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Viajes</h2>
- <p>El procesamiento de reservaciones El Programa CI Banco Recompensas Índigo de CI BANCO se reserva el derecho a proporcionar los servicios a un cliente por las siguientes razones: • Rechazo del cargo a la Tarjeta por parte de CI BANCO. • Incapacidad para autenticar la tarjeta de crédito. • Incapacidad para autenticar al titular de la tarjeta de crédito. • Saldo insuficiente para cubrir el mínimo de Puntos requeridos de acuerdo a la regla de pago combinado que determine CI BANCO. • Procesamiento del pago y redención de Puntos del Programa Recompensas Índigo Todas las reservaciones deberán liquidarse a través de los Puntos del Programa CI Banco Recompensas Índigo, ya sea el total de la reservación o mediante un pago combinado. La redención mínima de Puntos para pago combinado en viajes es de 2,000 Puntos y el resto del valor de la reservación se pagará en pesos mediante un cargo a Tarjeta de Crédito CI BANCO. Al realizar el pago combinado, el tarjetahabiente podrá diferir a meses sin intereses el saldo en Pesos, siempre y cuando la promoción aplique. Las tarjetas elegibles para este programa son las que la institución considere. Únicamente el titular de la tarjeta podrá hacer uso de los Puntos.</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Políticas de Reservación</h2>
- <p>La redención de puntos no es reembolsable. En pagos combinados, el saldo pagado en pesos a través de las tarjetas CI BANCO no es reembolsable. Al confirmar el viaje, no está permitido realizar cambios, cancelaciones o reembolsos, sin importar el tiempo de anticipación con que se haya hecho la reservación, así como la antelación con la que se solicite alguno de los movimientos descritos. La política de no cambios, cancelaciones ni reembolso es aplicable para los servicios contratados como: -Reservaciones de Hotel. -Vuelos -Autobuses -Traslados -Tours y actividades. -Renta de autos. -Cruceros -Circuitos -Seguros de viaje. -Paquetes Aéreos y Terrestres. Las reservaciones no son transferibles en ninguno de los servicios mencionados. Cualquier modificación que genere un costo podrá ser pagada a través de las tarjetas de crédito CI BANCO, pero no así con Puntos del Programa CI Banco Recompensas Índigo. La política de cancelación no contempla el esquema de un “monedero virtual”, por lo que no se cuenta con la posibilidad de hacer créditos en ningún formato. Si el cliente no realiza su registro en el hotel o no utiliza el servicio contratado, cualquiera que este sea, se tomará como servicio consumido o “no show” y la cantidad correspondiente en Puntos o cargo a su tarjeta de crédito CI BANCO a la compra del mismo no será reembolsada. Cada operador es responsable del servicio que proporciona, por lo que ni CI BANCO, ni Master Loyalty Group ni sus proveedores serán responsables por fallas o incumplimiento en el servicio proporcionado. Servicio Aéreo: No se otorga descuento a niños. Los infantes (menores de 2 años) deberán ser documentados y pagar el cargo correspondiente en el aeropuerto de salida, si requieren asiento se cobrará el 100% de la tarifa de adulto. No aplican otros descuentos. Puede aplicar Mínimo/Máximo de estancia. Si no se utiliza el servicio de vuelo de ida (origen-destino) se perderá el servicio de vuelo de regreso (destino-origen) y cualquier otra conexión posterior al vuelo de salida, por lo que la cantidad correspondiente a la compra tanto en Puntos como en cargo a tarjeta de crédito no será reembolsada. El seguro de viajes de tu Tarjeta de Crédito CI BANCO aplica únicamente en caso de haber cubierto el costo total con la Tarjeta de Crédito CI BANCO.</p>
- <br>
- <hr>
-<h2 class="title" style="color: #a30831;">Documentación migratoria</h2>
- <p></p>
- <br>
- <h2 class="title" style="color: #a30831;">Transferencia de Puntos a Programas de Viajero Frecuente de Aerolíneas</h2>
- <p>El canje de Puntos CI BANCO por Kilómetros, Puntos o Millas de las aerolíneas participantes estará sujeto a lo especificado en el sitio del Programa referente a montos mínimos, rangos de transferencia y equivalencia, entre otros. Para realizar cualquier transferencia de Puntos por Millas o Kilómetros de Programas de viajero frecuente de las aerolíneas participantes en el Programa, el tarjetahabiente deberá estar inscrito previamente en dichos Programas. Es responsabilidad del cliente proporcionar el número correcto de su cuenta de viajero o huésped frecuente. Las transferencias son únicamente de titular a titular. Una vez transferidos los Puntos no podrán ser devueltos o cancelados y se sujetarán a los términos y condiciones de cada programa de destino. La transferencia de los Puntos se procesará durante un período de 7 días hábiles a partir de la solicitud del tarjetahabiente o de forma inmediata según el Programa:</p>
- <br>
-               
-                <ol class="list">
-                    <li> Los clientes que deseen participar en el Programa de Transferencia de Puntos de CI BANCO deben ser tarjetahabientes de CI BANCO y convertirse en socios de los programas de viajero o huésped frecuente.</li>
-<br>
-                    <li>Sólo los tarjetahabientes CI BANCO son elegibles a participar en el programa de Transferencia de Puntos.</li>
-                    <br>
-                    <li> Aquellos clientes cuya tarjeta de crédito (Cuenta) este al corriente, sin pagos vencidos o bloqueada
-será elegible para transferir Puntos a otros programas.</li>
-                    <br>
-                    <li>El tiempo de respuesta para el canje de Puntos que sean acreditados al número de socio de cada programa de viajero o huésped frecuente puede variar por cada aerolínea o programa participante.</li>
-                    <br>
-                    <li>La tasa de conversión de Puntos por cada programa de viajero o huésped frecuente puede variar por cada aerolínea o programa participante.</li>
-                    <br>
-                    <li>Una vez que los Puntos son transferidos a otros programas serán inmediatamente descontados del saldo disponible en Puntos dentro de CI BANCO. Los Puntos transferidos no pueden ser acreditados de nuevo a la cuenta de Puntos de CI BANCO ni tampoco a la cuenta de otro programa de viajero o huésped frecuente.</li>
-                    <br>
-                    <li>CI BANCO no asume ninguna responsabilidad por los Puntos transferidos desde una cuenta de un titular a cualquier programa de viajero o huésped frecuente o de las acciones de éstos en relación a sus programas.</li>
-                    <br>
-                    <li>Los tarjetahabientes que deseen transferir Puntos a cualquiera de los programas de viajero o huésped frecuente deberán proporcionar toda la información solicitada y deberá coincidir con la cuenta del programa de viajero o huésped frecuente. La información incompleta o incorrecta no podrá ser procesada.</li>
-                    <br>
-                    <li>Todas las preguntas o aclaraciones relativas al canje dentro de CI BANCO o transferencia de Puntos bajo el programa de Transferencia de puntos a otros programas serán decididas por CI BANCO a su exclusivo criterio.</li>
-                    <br>
-                    <li>Fraudes o abuso en relación con la acumulación y transferencia de Puntos dentro de CI BANCO o la Trasferencia de puntos a otros programas, puede resultar en la pérdida de Puntos, así como la cancelación de la Tarjeta de crédito.</li>
-                     <br>
-                    <li>Los clientes que participan en el Programa de Transferencia de puntos a otros programas están sujetos a y deben cumplir con las reglas del programa de recompensas de viajero o huésped frecuente participantes en el cual están inscritos. Es de la exclusiva responsabilidad de los programas participantes poder proporcionar al titular de la cuenta una copia de las reglas del programa a los socios inscritos en su programa de viajero o huésped frecuente.</li>
-                    <br>
-                    <li>Las aerolíneas participantes de los programas de viajero o huésped frecuente pueden cambiar las reglas del programa incluyendo regulaciones, políticas, prestaciones y condiciones de los niveles de participación o el Kilometraje, en su totalidad o en parte, en cualquier momento con o sin previo aviso, a pesar de que los cambios pueden afectar al valor de las millas aéreas gratis o puntos ya acumulados.</li>
-                    <br>
-                    <li>El programa de Transferencia de puntos a otros programas o a programas de viajero o huésped frecuente participantes está sujeto a cambios sin previo aviso.</li>
-                    <br>
-                    <li>CI BANCO se reserva el derecho de modificar los Términos de Uso en este documento y el Programa de Transferencia de puntos a otros programas en cualquier momento sin previo aviso</li>
-                    <br>
-                    <li>Al participar en el Programa de Transferencia de puntos a otros programas, el cliente autoriza expresamente a CI BANCO a compartir sólo la información específicamente necesaria del cliente para completar el intercambio de Puntos.</li>
-                    <br>
-                    <li>En caso de que las aerolíneas participantes no sean capaces de identificar las solicitudes del programa de Transferencia de Puntos y no se puedan aplicar las millas, kilómetros o puntos correspondientes a la cuenta solicitada, CI BANCO hará su mejor esfuerzo para identificar y resolver el problema que puede incluir contactar al titular de la tarjeta. Esto puede retrasar la acreditación de las millas aéreas, kilómetros o puntos a la cuenta del programa de viajero o huésped frecuente. Si el problema no puede resolverse, los Puntos descontados de CI BANCO para la operación de la Transferencia de Puntos se volverán a acreditar al tarjetahabiente dentro del programa CI BANCO.</li>
-                    <br>
-                    <li>La confirmación de una solicitud para transferir Puntos dentro de los programas de viajero o huésped frecuente constituirá reconocimiento completo y la aceptación de las condiciones de uso asociados a la participación en el Programa de Transferencia de Puntos. Además, el tarjetahabiente autoriza expresamente a CI BANCO compartir sólo la información específica del cliente necesaria para el intercambio de Puntos para millas aérea.</li>
-                    <br>
-
-<h2 class="title" style="color: #a30831;">Transferencia de Puntos CI Banco recompensas Índigo a Puntos de Club Premier</h2>
- <br>
-       <p>Los Puntos transferidos a Club Premier se verán reflejados de forma automática en la cuenta del titular de Club Premier. Las transferencias deben ser en múltiplos de 1,000 Puntos. Los Puntos Premier se eligen por paquetes y podrás elegir el número de paquetes que requieras. La equivalencia de Puntos CI Banco Recompensas Índigo – Puntos Premier es la siguiente: Puntos CI Recompensas Puntos Premier 2,000 1,000 5,700 3,000 9,500 5,000.</p> 
-       <br>       
-       <h2 class="title" style="color: #a30831;">Activación de Certificados</h2>
-       <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p> 
-       <br>  
-       <h2 class="title" style="color: #a30831;">Para compras a 24 meses</h2>
-       <p>Los certificados tendrán un periodo de activación de 15 días hábiles, que comenzarán a correr un día hábil después de la fecha de redención. Recarga de saldo de monederos. La activación de saldo se realizará en un periodo máximo de 15 días hábiles, que comenzarán a correr un día hábil después de la fecha de redención. En los casos donde el monedero se encuentre inactivo y sea necesario proporcionar otro monedero, el tiempo de recarga se reajustará a partir de la fecha en que se proporcionó el nuevo monedero. Los boletos de avión, beneficios de viaje, mercancías, certificados de regalo y cualquier beneficio publicado en el catálogo de premios del programa se encuentran sujetos a disponibilidad y pueden aplicar ciertas restricciones. En caso de que un tarjetahabiente decida separarse del Programa CI Banco Recompensas Índigo y/o cancelar su Tarjeta de Crédito, los Puntos acumulados en la cuenta serán cancelados y no podrán ser reactivados, por lo que se pierden de forma inmediata e irrevocable. En caso de que la Tarjeta de Crédito sea cancelada por parte de CI BANCO o del tarjetahabiente, los Puntos acumulados en la cuenta serán cancelados y no podrán ser reactivados, por lo que se pierden de forma inmediata e irrevocable. CI BANCO se reserva el derecho de otorgar Puntos adicionales a tarjetahabientes seleccionados. CI BANCO se reserva el derecho de descalificar a cualquier tarjetahabiente de participar en el Programa e invalidar todos los Puntos acumulados debido a abuso, fraude, o violación a los términos y condiciones del Programa y el Banco puede tomar esta determinación a su propia discreción. CI BANCO se reserva el derecho de modificar los términos y condiciones del Programa CI Banco Recompensas Índigo o decancelar, modificar o suspender temporal o definitivamente el Programa, así como tiene la opción de restringir, limitar, terminar o cancelar la redención de los Puntos en cualquier momento sin previo aviso y sin responsabilidad alguna.</p> 
-       <br>       
-
-        </main>
-        <footer>
+            <p>Condiciones Generales CI BANCO ofrece un Programa de Lealtad a sus clientes, denominado “CI Banco
+                Recompensas Índigo”. Al aceptar su inscripción al Programa CI Recompensas Índigo, el cliente reconoce y
+                acepta sujetarse en todo momento a los Términos y Condiciones que aparecen a continuación o los que le
+                sustituyan y al efecto se publiquen en la página: www.cibancorecompensaindigo.com.mx, los cuales podrán
+                ser modificados en cualquier momento y regirán para el tarjetahabiente o cualquier otro beneficiario. El
+                Programa CI Banco Recompensas Índigo está sujeto a cambios sin previo aviso en la acumulación,
+                equivalencia, transferencia y vigencia de los Puntos, así como en la disponibilidad de las recompensas
+                mencionadas. En caso de la quiebra o incumplimiento por parte de cualquier proveedor de productos o
+                servicios que constituyen las recompensas del programa, ni CI BANCO, ni cualquiera de los Proveedores,
+                ni cualquier otro vendedor de productos y servicios será responsable por dicha quiebra o incumplimiento.
+                En caso de que a un cliente se le negase alguno de los beneficios del programa al cual tiene derecho, la
+                responsabilidad de CI BANCO se limitará a respetar los Puntos acumulados en el Programa: • Este programa
+                es exclusivo para las Tarjetas de Crédito CI BANCO emitidas en Territorio Nacional. • Este beneficio
+                está disponible para los tarjetahabientes y los que la institución considere. • Los Puntos son propiedad
+                de CI BANCO, por lo que el tarjetahabiente no los puede comprar, vender o transferir de ninguna manera.
+            </p>
+            <br>
             <hr>
-            <div class="container-fotter">
-                <div class="capa-fotter fotter1"></div>
-                <div class="capa-fotter fotter2"></div>
-                <div class="capa-fotter fotter3"></div>
-            </div>
-            <div class="logo-fotter">
-                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW_INVEX_TyC_CI_Banco/imagen1.png" alt="">
-            </div>
-        </footer>
-    </body>
+            <h2 class="title" style="color: #a30831;">Acumulación</h2>
+            <p>Los tarjetahabientes podrán obtener Puntos únicamente por compras de productos y servicios al utilizar la
+                Tarjeta de Crédito CI BANCO, por lo que no aplican, de manera enunciativa más no limitativa para
+                acumulación de Puntos: pagos de anualidad, disposiciones en efectivo, transferencias de saldo, cheques
+                de viajero, comisiones por pagos tardío, comisiones por sobregiros, gastos de seguros, otros cargos
+                relacionados con el servicio de la tarjeta, intereses, pago de impuestos, giros de comercios dedicados a
+                los juegos de apuesta y azar, comisiones y/o cargos no autorizados o no reconocidos.
+                Los Puntos del tarjetahabiente se acumularán a razón de: 10 Pesos Mexicanos que se hayan cargado a la
+                Tarjeta de Crédito CI BANCO como a continuación se muestra: Recompensas Índigo Todas las compras
+                nacionales 2 Puntos por cada 10 pesos. Todas las compras internacionales 3 Puntos por cada 10 pesos. Mes
+                de Bienvenida Bono de 3,000 pts por cada 10,000 pesos facturados durante los 3 primeros meses
+                posteriores a la activación de la tarjeta. La acumulación de Puntos es diaria y el cliente puede
+                consultar el saldo actualizado a través de www.cibancorecompensaindigo.com.mx o llamando al 6720-1747
+                desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de la República. Si el
+                tarjetahabiente cancela la compra realizada con su Tarjeta de Crédito CI BANCO y generó Puntos, al
+                momento de la cancelación los puntos serán cancelados de la cuenta. En caso de que el Tarjetahabiente
+                haya canjeado esos puntos, la cuenta presentará un saldo negativo el cual se compensará con las
+                siguientes compras efectuadas que generen Puntos. El saldo disponible no refleja Puntos de las
+                transacciones de las compras que aún no están registradas en el estado de cuenta. Para la acumulación y
+                el canje de Puntos del Programa, es requisito indispensable que la(s) Tarjeta(s) del (los) cliente(s)
+                esté(n) al corriente en sus pagos y no se encuentre bloqueada, es decir, que no tengan pagos vencidos,
+                que se encuentren en reestructura, sobregiro o cualquier bloqueo que no permita el uso normal de la
+                Tarjeta de Crédito.</p>
+            <br>
+            <hr>
+            <h2 class="title" style="color: #a30831;">Vigencia de los Puntos</h2>
+            <p>En caso de no utilizar los Puntos, expirarán a los dos años a partir de la fecha de acreditación, una vez
+                vencidos ya no se pueden reactivar en el saldo disponible. Unificación de Puntos entre cuentas Propias
+                El cliente podrá Unificar los Puntos de diferentes cuentas siempre y cuando él sea el titular de las
+                Tarjetas de Crédito. Para solicitarlo deberá llamar al 6720-1747 desde el D.F. y Área Metropolitana y al
+                01800 300-1122 desde el Interior de la República. Redención de Puntos Los Puntos disponibles pueden ser
+                redimidos por diferentes beneficios del catálogo como lo son artículos, certificados, viajes,
+                transferencia de puntos, los cuales podrá consultar en el catálogo publicado en la página:
+                www.cibancorecompensaindigo.com.mx,, o llamando al 6720-1747 desde el D.F. y Área Metropolitana y al
+                01800 300-1122 desde el Interior de la República. Una vez realizado el canje de Puntos por alguno de los
+                beneficios del programa no se aceptan cancelaciones. Los Puntos únicamente pueden ser canjeados con base
+                en el saldo de Puntos disponibles y serán descontados de inmediato una vez que hayan sido utilizados.
+            </p>
+            <br>
+            <hr>
+            <h2 class="title" style="color: #a30831;">Artículos</h2>
+            <p>Una vez solicitada la redención del artículo, no se aceptan cambios ni devoluciones (a excepción de
+                defecto de fábrica del producto). Todos los precios sin excepción alguna están sujetos a cambio sin
+                previo aviso. Los productos y servicios que aquí se anuncian son exclusiva responsabilidad de Master
+                Loyalty Group. Master Loyalty Group es un distribuidor de los productos que se ofrecen en este sitio.
+                Por lo tanto, con el objeto de brindarle un mejor servicio, Master Loyalty Group interviene para hacer
+                efectiva la garantía en caso necesario, siendo el fabricante el único responsable del cumplimiento de la
+                misma. El tarjetahabiente acepta liberar a CI BANCO, Master Loyalty Group y sus proveedores que
+                participan, de cualquier responsabilidad por lesiones, accidentes, pérdidas, reclamaciones, gastos o
+                daños sufridos por el tarjetahabiente, asociados a cualquier beneficio o recompensa o por el uso de la
+                recompensa mientras esté participando en este Programa CI Banco Recompensas Índigo. Debido al cambio de
+                tecnología, los modelos, colores y configuraciones de los productos podrán cambiar, la foto que aparece
+                en el catálogo es solo ilustrativa y de referencia. En caso de que así sea, se entregará un producto
+                sustituto con características similares o mejores con previo aviso y autorización del Tarjetahabiente.
+                Todos los productos y servicios de este Programa están sujetos a restricciones de los proveedores y/o
+                disponibilidad. Todos los productos incluyen exclusivamente garantía del proveedor. El cliente podrá
+                obtener un premio de mercancía canjeando el número exacto de Puntos requeridos o canjeando una parte
+                proporcional en Puntos, cuando así esté disponible, más un monto en dinero que deberá ser pagado con su
+                Tarjeta de Crédito CI BANCO participante. El monto en dinero, cuando así se especifique, podrá ser
+                pagado en mensualidades sin intereses que aparecerán en el estado de cuenta mensual del tarjetahabiente.
+                Todos los artículos y servicios ofrecidos en el catálogo de premios incluyen impuestos aplicables y
+                cargos por manejo y por envío. El envío de las mercancías tomará un periodo máximo de 15 días hábiles a
+                partir de la fecha de canje. Los artículos del catálogo están sujetos a disponibilidad y pueden ser
+                cambiados sin previo aviso. Es responsabilidad del cliente abrir el artículo y revisar que esté en buen
+                estado desde el momento de la recepción del mismo. Si el paquete se encontrara en malas condiciones o
+                dañado en el momento de la recepción no se debe recibir y el tarjetahabiente deberá reportarlo
+                inmediatamente al 6720-1747 desde el D.F. y Área Metropolitana y al 01800 300-1122 desde el Interior de
+                la República, en un lapso no mayor a 3 días naturales a partir de la fecha de recepción. Es necesario
+                conservar el empaque original del artículo y el de paquetería, ya que para hacer la reclamación se
+                podrán requerir fotos del artículo. Las devoluciones de artículos sólo procederán en los casos en los
+                que la mercancía se encuentre dañada por manejo de mensajería o en caso de recibir artículos
+                incorrectos, para que la devolución tenga lugar, los productos deberán ser regresados con el empaque y
+                los accesorios originales. Por lo anterior, es responsabilidad del tarjetahabiente proporcionar todos
+                los datos correctos y completos para recepción de sus productos.
+                Los productos no podrán ser enviados o entregados en apartados postales. Todos los productos ofrecidos
+                cuentan con la garantía del fabricante y se podrá hacer válida en caso de fallas naturales o defecto de
+                fabricación directamente con el proveedor del producto. La garantía del producto se cancelará de manera
+                automática en cuanto se haga mal uso de éste. Ni CI BANCO, ni Master Loyalty Group ni ninguno de los
+                proveedores asumen responsabilidad alguna por la calidad o condición de las mercancías. En caso de que
+                no haya disponibilidad de un artículo canjeado, se hará llegar a los tarjetahabientes una propuesta de
+                un artículo sustituto con características similares o mejores; cuando la propuesta no sea aceptada, se
+                procederá con la cancelación y restauración de Puntos. Los tarjetahabientes cuentan con 20 días hábiles
+                para confirmar su respuesta sobre la propuesta a partir de la fecha en que se les envía la notificación
+                por correo o a través del Centro de Atención Telefónica, en caso de no recibir respuesta en este
+                periodo, la redención se cancelará y se regresarán los puntos a la cuenta.”</p>
+            <br>
+            <hr>
+            <h2 class="title" style="color: #a30831;">Viajes</h2>
+            <p>El procesamiento de reservaciones El Programa CI Banco Recompensas Índigo de CI BANCO se reserva el
+                derecho a proporcionar los servicios a un cliente por las siguientes razones: • Rechazo del cargo a la
+                Tarjeta por parte de CI BANCO. • Incapacidad para autenticar la tarjeta de crédito. • Incapacidad para
+                autenticar al titular de la tarjeta de crédito. • Saldo insuficiente para cubrir el mínimo de Puntos
+                requeridos de acuerdo a la regla de pago combinado que determine CI BANCO. • Procesamiento del pago y
+                redención de Puntos del Programa Recompensas Índigo Todas las reservaciones deberán liquidarse a través
+                de los Puntos del Programa CI Banco Recompensas Índigo, ya sea el total de la reservación o mediante un
+                pago combinado. La redención mínima de Puntos para pago combinado en viajes es de 2,000 Puntos y el
+                resto del valor de la reservación se pagará en pesos mediante un cargo a Tarjeta de Crédito CI BANCO. Al
+                realizar el pago combinado, el tarjetahabiente podrá diferir a meses sin intereses el saldo en Pesos,
+                siempre y cuando la promoción aplique. Las tarjetas elegibles para este programa son las que la
+                institución considere. Únicamente el titular de la tarjeta podrá hacer uso de los Puntos.</p>
+            <br>
+            <hr>
+            <h2 class="title" style="color: #a30831;">Políticas de Reservación</h2>
+            <p>La redención de puntos no es reembolsable. En pagos combinados, el saldo pagado en pesos a través de las
+                tarjetas CI BANCO no es reembolsable. Al confirmar el viaje, no está permitido realizar cambios,
+                cancelaciones o reembolsos, sin importar el tiempo de anticipación con que se haya hecho la reservación,
+                así como la antelación con la que se solicite alguno de los movimientos descritos. La política de no
+                cambios, cancelaciones ni reembolso es aplicable para los servicios contratados como: -Reservaciones de
+                Hotel. -Vuelos -Autobuses -Traslados -Tours y actividades. -Renta de autos. -Cruceros -Circuitos
+                -Seguros de viaje. -Paquetes Aéreos y Terrestres. Las reservaciones no son transferibles en ninguno de
+                los servicios mencionados. Cualquier modificación que genere un costo podrá ser pagada a través de las
+                tarjetas de crédito CI BANCO, pero no así con Puntos del Programa CI Banco Recompensas Índigo. La
+                política de cancelación no contempla el esquema de un “monedero virtual”, por lo que no se cuenta con la
+                posibilidad de hacer créditos en ningún formato. Si el cliente no realiza su registro en el hotel o no
+                utiliza el servicio contratado, cualquiera que este sea, se tomará como servicio consumido o “no show” y
+                la cantidad correspondiente en Puntos o cargo a su tarjeta de crédito CI BANCO a la compra del mismo no
+                será reembolsada. Cada operador es responsable del servicio que proporciona, por lo que ni CI BANCO, ni
+                Master Loyalty Group ni sus proveedores serán responsables por fallas o incumplimiento en el servicio
+                proporcionado. Servicio Aéreo: No se otorga descuento a niños. Los infantes (menores de 2 años) deberán
+                ser documentados y pagar el cargo correspondiente en el aeropuerto de salida, si requieren asiento se
+                cobrará el 100% de la tarifa de adulto. No aplican otros descuentos. Puede aplicar Mínimo/Máximo de
+                estancia. Si no se utiliza el servicio de vuelo de ida (origen-destino) se perderá el servicio de vuelo
+                de regreso (destino-origen) y cualquier otra conexión posterior al vuelo de salida, por lo que la
+                cantidad correspondiente a la compra tanto en Puntos como en cargo a tarjeta de crédito no será
+                reembolsada. El seguro de viajes de tu Tarjeta de Crédito CI BANCO aplica únicamente en caso de haber
+                cubierto el costo total con la Tarjeta de Crédito CI BANCO.</p>
+            <br>
+            <hr>
+            <h2 class="title" style="color: #a30831;">Documentación migratoria</h2>
+            <p></p>
+            <br>
+            <h2 class="title" style="color: #a30831;">Transferencia de Puntos a Programas de Viajero Frecuente de
+                Aerolíneas</h2>
+            <p>El canje de Puntos CI BANCO por Kilómetros, Puntos o Millas de las aerolíneas participantes estará sujeto
+                a lo especificado en el sitio del Programa referente a montos mínimos, rangos de transferencia y
+                equivalencia, entre otros. Para realizar cualquier transferencia de Puntos por Millas o Kilómetros de
+                Programas de viajero frecuente de las aerolíneas participantes en el Programa, el tarjetahabiente deberá
+                estar inscrito previamente en dichos Programas. Es responsabilidad del cliente proporcionar el número
+                correcto de su cuenta de viajero o huésped frecuente. Las transferencias son únicamente de titular a
+                titular. Una vez transferidos los Puntos no podrán ser devueltos o cancelados y se sujetarán a los
+                términos y condiciones de cada programa de destino. La transferencia de los Puntos se procesará durante
+                un período de 7 días hábiles a partir de la solicitud del tarjetahabiente o de forma inmediata según el
+                Programa:</p>
+            <br>
+
+            <ol class="list">
+                <li> Los clientes que deseen participar en el Programa de Transferencia de Puntos de CI BANCO deben ser
+                    tarjetahabientes de CI BANCO y convertirse en socios de los programas de viajero o huésped
+                    frecuente.</li>
+                <br>
+                <li>Sólo los tarjetahabientes CI BANCO son elegibles a participar en el programa de Transferencia de
+                    Puntos.</li>
+                <br>
+                <li> Aquellos clientes cuya tarjeta de crédito (Cuenta) este al corriente, sin pagos vencidos o
+                    bloqueada
+                    será elegible para transferir Puntos a otros programas.</li>
+                <br>
+                <li>El tiempo de respuesta para el canje de Puntos que sean acreditados al número de socio de cada
+                    programa de viajero o huésped frecuente puede variar por cada aerolínea o programa participante.
+                </li>
+                <br>
+                <li>La tasa de conversión de Puntos por cada programa de viajero o huésped frecuente puede variar por
+                    cada aerolínea o programa participante.</li>
+                <br>
+                <li>Una vez que los Puntos son transferidos a otros programas serán inmediatamente descontados del saldo
+                    disponible en Puntos dentro de CI BANCO. Los Puntos transferidos no pueden ser acreditados de nuevo
+                    a la cuenta de Puntos de CI BANCO ni tampoco a la cuenta de otro programa de viajero o huésped
+                    frecuente.</li>
+                <br>
+                <li>CI BANCO no asume ninguna responsabilidad por los Puntos transferidos desde una cuenta de un titular
+                    a cualquier programa de viajero o huésped frecuente o de las acciones de éstos en relación a sus
+                    programas.</li>
+                <br>
+                <li>Los tarjetahabientes que deseen transferir Puntos a cualquiera de los programas de viajero o huésped
+                    frecuente deberán proporcionar toda la información solicitada y deberá coincidir con la cuenta del
+                    programa de viajero o huésped frecuente. La información incompleta o incorrecta no podrá ser
+                    procesada.</li>
+                <br>
+                <li>Todas las preguntas o aclaraciones relativas al canje dentro de CI BANCO o transferencia de Puntos
+                    bajo el programa de Transferencia de puntos a otros programas serán decididas por CI BANCO a su
+                    exclusivo criterio.</li>
+                <br>
+                <li>Fraudes o abuso en relación con la acumulación y transferencia de Puntos dentro de CI BANCO o la
+                    Trasferencia de puntos a otros programas, puede resultar en la pérdida de Puntos, así como la
+                    cancelación de la Tarjeta de crédito.</li>
+                <br>
+                <li>Los clientes que participan en el Programa de Transferencia de puntos a otros programas están
+                    sujetos a y deben cumplir con las reglas del programa de recompensas de viajero o huésped frecuente
+                    participantes en el cual están inscritos. Es de la exclusiva responsabilidad de los programas
+                    participantes poder proporcionar al titular de la cuenta una copia de las reglas del programa a los
+                    socios inscritos en su programa de viajero o huésped frecuente.</li>
+                <br>
+                <li>Las aerolíneas participantes de los programas de viajero o huésped frecuente pueden cambiar las
+                    reglas del programa incluyendo regulaciones, políticas, prestaciones y condiciones de los niveles de
+                    participación o el Kilometraje, en su totalidad o en parte, en cualquier momento con o sin previo
+                    aviso, a pesar de que los cambios pueden afectar al valor de las millas aéreas gratis o puntos ya
+                    acumulados.</li>
+                <br>
+                <li>El programa de Transferencia de puntos a otros programas o a programas de viajero o huésped
+                    frecuente participantes está sujeto a cambios sin previo aviso.</li>
+                <br>
+                <li>CI BANCO se reserva el derecho de modificar los Términos de Uso en este documento y el Programa de
+                    Transferencia de puntos a otros programas en cualquier momento sin previo aviso</li>
+                <br>
+                <li>Al participar en el Programa de Transferencia de puntos a otros programas, el cliente autoriza
+                    expresamente a CI BANCO a compartir sólo la información específicamente necesaria del cliente para
+                    completar el intercambio de Puntos.</li>
+                <br>
+                <li>En caso de que las aerolíneas participantes no sean capaces de identificar las solicitudes del
+                    programa de Transferencia de Puntos y no se puedan aplicar las millas, kilómetros o puntos
+                    correspondientes a la cuenta solicitada, CI BANCO hará su mejor esfuerzo para identificar y resolver
+                    el problema que puede incluir contactar al titular de la tarjeta. Esto puede retrasar la
+                    acreditación de las millas aéreas, kilómetros o puntos a la cuenta del programa de viajero o huésped
+                    frecuente. Si el problema no puede resolverse, los Puntos descontados de CI BANCO para la operación
+                    de la Transferencia de Puntos se volverán a acreditar al tarjetahabiente dentro del programa CI
+                    BANCO.</li>
+                <br>
+                <li>La confirmación de una solicitud para transferir Puntos dentro de los programas de viajero o huésped
+                    frecuente constituirá reconocimiento completo y la aceptación de las condiciones de uso asociados a
+                    la participación en el Programa de Transferencia de Puntos. Además, el tarjetahabiente autoriza
+                    expresamente a CI BANCO compartir sólo la información específica del cliente necesaria para el
+                    intercambio de Puntos para millas aérea.</li>
+                <br>
+
+                <h2 class="title" style="color: #a30831;">Transferencia de Puntos CI Banco recompensas Índigo a Puntos
+                    de Club Premier</h2>
+                <br>
+                <p>Los Puntos transferidos a Club Premier se verán reflejados de forma automática en la cuenta del
+                    titular de Club Premier. Las transferencias deben ser en múltiplos de 1,000 Puntos. Los Puntos
+                    Premier se eligen por paquetes y podrás elegir el número de paquetes que requieras. La equivalencia
+                    de Puntos CI Banco Recompensas Índigo – Puntos Premier es la siguiente: Puntos CI Recompensas Puntos
+                    Premier 2,000 1,000 5,700 3,000 9,500 5,000.</p>
+                <br>
+                <h2 class="title" style="color: #a30831;">Activación de Certificados</h2>
+                <p>CAT PROMEDIO 56.5% sin IVA. Informativo. Tasa anual fija del 45.63%.</p>
+                <br>
+                <h2 class="title" style="color: #a30831;">Para compras a 24 meses</h2>
+                <p>Los certificados tendrán un periodo de activación de 15 días hábiles, que comenzarán a correr un día
+                    hábil después de la fecha de redención. Recarga de saldo de monederos. La activación de saldo se
+                    realizará en un periodo máximo de 15 días hábiles, que comenzarán a correr un día hábil después de
+                    la fecha de redención. En los casos donde el monedero se encuentre inactivo y sea necesario
+                    proporcionar otro monedero, el tiempo de recarga se reajustará a partir de la fecha en que se
+                    proporcionó el nuevo monedero. Los boletos de avión, beneficios de viaje, mercancías, certificados
+                    de regalo y cualquier beneficio publicado en el catálogo de premios del programa se encuentran
+                    sujetos a disponibilidad y pueden aplicar ciertas restricciones. En caso de que un tarjetahabiente
+                    decida separarse del Programa CI Banco Recompensas Índigo y/o cancelar su Tarjeta de Crédito, los
+                    Puntos acumulados en la cuenta serán cancelados y no podrán ser reactivados, por lo que se pierden
+                    de forma inmediata e irrevocable. En caso de que la Tarjeta de Crédito sea cancelada por parte de CI
+                    BANCO o del tarjetahabiente, los Puntos acumulados en la cuenta serán cancelados y no podrán ser
+                    reactivados, por lo que se pierden de forma inmediata e irrevocable. CI BANCO se reserva el derecho
+                    de otorgar Puntos adicionales a tarjetahabientes seleccionados. CI BANCO se reserva el derecho de
+                    descalificar a cualquier tarjetahabiente de participar en el Programa e invalidar todos los Puntos
+                    acumulados debido a abuso, fraude, o violación a los términos y condiciones del Programa y el Banco
+                    puede tomar esta determinación a su propia discreción. CI BANCO se reserva el derecho de modificar
+                    los términos y condiciones del Programa CI Banco Recompensas Índigo o decancelar, modificar o
+                    suspender temporal o definitivamente el Programa, así como tiene la opción de restringir, limitar,
+                    terminar o cancelar la redención de los Puntos en cualquier momento sin previo aviso y sin
+                    responsabilidad alguna.</p>
+                <br>
+
+    </main>
+    <footer>
+        <hr>
+        <div class="container-fotter">
+            <div class="capa-fotter fotter1"></div>
+            <div class="capa-fotter fotter2"></div>
+            <div class="capa-fotter fotter3"></div>
+        </div>
+        <div class="logo-fotter">
+            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW_INVEX_TyC_CI_Banco/imagen1.png" alt="">
+        </div>
+    </footer>
 </body>
+
 
 </html>

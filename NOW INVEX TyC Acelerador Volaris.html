@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landings legales</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 90px;
+            width: 50%;
+            border-bottom-left-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                
+            }
+          
+        }
+
+        .capa1 {
+            background: linear-gradient(to right, #4c2e62, #970e37);
+            z-index: 3;
+        }
+
+        .capa2 {
+            background-color: #161334;
+            top: 26px;
+            width: 47%;
+            z-index: 2;
+        }
+
+        .capa3 {
+            background: linear-gradient(to right, #7b66a8, #e1a0b6);
+            top: 51px;
+            width: 42%;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 5%;
+
+        }
+
+        .logo img {
+            height: 100px;
+            object-fit: cover;
+        }
+
+        main {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            background-image: url(/public/invex_marca_agua.png);
+               background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50%;
+
+        }
+
+        main .block {
+            position: absolute;
+            top: 0;
+            height: 5px;
+            max-width: 130px;
+            width: 50%;
+            background: linear-gradient(to right, #4c2e63, #9e0a34);
+        }
+
+        main hr {
+            margin-left: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+
+        main .hr-bottom {
+            width: 100%;
+        }
+
+        .title h1 {
+            color: #a30831;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        section {
+            font-size: 16px;
+            line-height: 1.3rem;
+        }
+
+        /* .list{
+            color: #a30831;
+            font-weight: 800;
+        }
+        .list li{
+            color: black
+        } */
+
+        .list {
+            list-style: none;
+            padding: 0;
+            counter-reset: item;
+        }
+
+        .list li {
+            position: relative;
+            padding-left: 40px;
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+
+        .list li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: #a30831;
+            font-weight: 800;
+        }
+
+        footer {
+            position: relative;
+            height: 100px;
+            background-color: white;
+            margin-bottom: 0;
+        }
+
+         .capa-fotter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 30%;
+            border-top-right-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                top: 30px;
+            }
+        }
+
+        .fotter1 {
+             background: linear-gradient(to right, #e1a0b6, #7b66a8);
+            
+            z-index: 1;
+        }
+
+        .fotter2 {
+            background-color: #161334;
+            top: 26px;
+            width: 37%;
+            z-index: 2;
+             @media (max-width: 900px) {
+               top: 56px;
+            }
+        }
+
+        .fotter3 {
+           background: linear-gradient(to right,  #970e37,#4c2e62);
+            top: 51px;
+            width: 42%;
+            z-index: 3;
+             @media (max-width: 900px) {
+               top: 86px;
+            }
+        }
+
+        .logo-fotter{
+        position: absolute;
+        width: 20%;
+        right: 0;
+        }
+
+        .logo-fotter img{
+            height: 100px;
+            object-fit: cover;
+        }
+
+          footer hr {
+            margin-right: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX_TyC_Acelerador_Volaris/hader.png    " alt="">
+            </div>
+            <div class="banner-header">
+                <div class="capa capa1"></div>
+                <div class="capa capa2"></div>
+                <div class="capa capa3"></div>
+            </div>
+
+        </header>
+        <main>
+            <div class="block"></div>
+            <hr>
+            <div class="title">
+                <h2>Términos y Condiciones </h2>
+                <h1>
+                    Acelerador Volaris.</h1>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+                <br>
+                <h1 class="title" style="color: #a30831;" >Condiciones Generales</h1>
+                <hr>
+                <br>
+                <p>INVEX ofrece un Programa de Lealtad a sus clientes, denominado “Acelerador Monedero Volaris INVEX”. Al aceptar su inscripción al Acelerador Monedero Volaris INVEX, el cliente reconoce y acepta sujetarse en todo momento a los Términos y Condiciones que aparecen a continuación o los que le sustituyan y al efecto se publiquen en la página: www.aceleradorvolaris.com.mx, los cuales podrán ser modificados en cualquier momento y regirán para el tarjetahabiente o cualquier otro beneficiario.
+El Acelerador Monedero Volaris INVEX está sujeto a cambios sin previo aviso en la acumulación, equivalencia, transferencia y vigencia de los Puntos, así como en la disponibilidad de las recompensas mencionadas.
+En caso de la quiebra o incumplimiento por parte de cualquier proveedor de productos o servicios que constituyen las recompensas del programa, ni INVEX, ni cualquiera de los Proveedores, ni cualquier otro vendedor de productos y servicios será responsable por dicha quiebra o incumplimiento.
+En caso de que a un cliente se le negase alguno de los beneficios del programa al cual tiene derecho, la responsabilidad de INVEX se limitará a respetar los Puntos acumulados en el Programa:
+• Este programa es exclusivo para las Tarjetas de Crédito Volaris INVEX emitidas en Territorio Nacional.
+• Este beneficio está disponible para los tarjetahabientes: Volaris INVEX, Volaris INVEX 2.0 y Volaris .0
+• Los Puntos son propiedad de INVEX, por lo que el tarjetahabiente no los puede comprar, vender o transferir de ninguna manera..</p>
+            
+<br>
+<h1 class="title" style="color: #a30831;" >Acumulación</h1>
+<hr>
+<p>Los tarjetahabientes podrán obtener Puntos únicamente por compras de productos y servicios al utilizar la Tarjeta de Crédito Volaris INVEX, Volaris INVEX 2.0 y Volaris .0, por lo que no aplican, de manera enunciativa más no limitativa para acumulación de Puntos: pagos de anualidad, disposiciones en efectivo, transferencias de saldo, cheques de viajero, comisiones por pagos tardío, comisiones por sobregiros, gastos de seguros, otros cargos relacionados con el servicio de la tarjeta, intereses, pago de impuestos, giros de comercios dedicados a los juegos de apuesta y azar, comisiones y/o cargos no autorizados o no reconocidos.
+Los Puntos del tarjetahabiente se acumularán a razón de: 10 Pesos Mexicanos que se hayan cargado a la Tarjeta de Crédito Volaris INVEX, Volaris INVEX 2.0 y Volaris .0 como a continuación se muestra:</p>
+<br>
+<img style="width: 900px; margin-left: 40px;"  src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX_TyC_Acelerador_Volaris/tabla.png""
+<br>
+<br>
+ <p>Los tarjetahabientes podrán obtener Puntos únicamente por compras de productos y servicios al utilizar la Tarjeta de Crédito Volaris INVEX, Volaris INVEX 2.0 y Volaris .0, por lo que no aplican, de manera enunciativa más no limitativa para acumulación de Puntos: pagos de anualidad, disposiciones en efectivo, transferencias de saldo, cheques de viajero, comisiones por pagos tardío, comisiones por sobregiros, gastos de seguros, otros cargos relacionados con el servicio de la tarjeta, intereses, pago de impuestos, giros de comercios dedicados a los juegos de apuesta y azar, comisiones y/o cargos no autorizados o no reconocidos.
+Los Puntos del tarjetahabiente se acumularán a razón de: 10 Pesos Mexicanos que se hayan cargado a la Tarjeta de Crédito Volaris INVEX, Volaris INVEX 2.0 y Volaris .0 como a continuación se muestra:</p>
+ <br>
+<h2 class="title" style="color: #a30831;">Vigencia de los Puntos</h2>
+<hr>
+       <p>La vigencia de puntos por acumulación (excepto bono de cumpleaños), es de dos años a partir de la fecha de acreditación, una vez vencidos ya no se pueden reactivar en el saldo disponible.</p> 
+       <br> 
+       <h2 class="title" style="color: #a30831;">Predención de Puntos</h2>
+       <hr>
+       <p>CLos Puntos disponibles pueden ser redimidos por diferentes beneficios del catálogo como lo son artículos, certificados, los cuales podrá consultar en el catálogo publicado en la página: www.aceleradorvolaris.com.mx, o llamando al 55-6720-1747 desde el D.F. y Área Metropolitana y al 800-300-1122 desde el Interior de la República. Una vez realizado el canje de Puntos por alguno de los beneficios del programa no se aceptan cancelaciones.
+Los Puntos únicamente pueden ser canjeados con base en el saldo de Puntos disponibles y serán descontados de inmediato una vez que hayan sido utilizados.</p> 
+       <br>  
+       <h2 class="title" style="color: #a30831;">Artículos</h2>
+       <hr>
+       <p>Una vez solicitada la redención del artículo, no se aceptan cambios ni devoluciones (a excepción de defecto de fábrica del producto).
+Todos los precios sin excepción alguna están sujetos a cambio sin previo aviso. Los productos y servicios que aquí se anuncian son exclusiva responsabilidad de Master Loyalty Group.
+Master Loyalty Group es un distribuidor de los productos que se ofrecen en este sitio. Por lo tanto, con el objeto de brindarle un mejor servicio, Master Loyalty Group interviene para hacer efectiva la garantía en caso necesario, siendo el fabricante el único responsable del cumplimiento de la misma.
+El tarjetahabiente acepta liberar a INVEX, Master Loyalty Group y sus proveedores que participan, de cualquier responsabilidad por lesiones, accidentes, pérdidas, reclamaciones, gastos o daños sufridos por el tarjetahabiente, asociados a cualquier beneficio o recompensa o por el uso de la recompensa mientras esté participando en este Programa Acelerador Monedero Volaris.
+Debido al cambio de tecnología, los modelos, colores y configuraciones de los productos podrán cambiar, la foto que aparece en el catálogo es solo ilustrativa y de referencia. En caso de que así sea, se entregará un producto sustituto con características similares o mejores con previo aviso y autorización del Tarjetahabiente.
+Todos los productos y servicios de este Programa están sujetos a restricciones de los proveedores y/o disponibilidad.
+Todos los productos incluyen exclusivamente garantía del proveedor. El cliente podrá obtener un premio de mercancía canjeando el número exacto de Puntos requeridos o canjeando una parte proporcional en Puntos, cuando así esté disponible, más un monto en dinero que deberá ser pagado con su Tarjeta de Crédito Volaris INVEX, Volaris INVEX 2.0 y Volaris .0 participante. El monto en dinero, cuando así se especifique, podrá ser pagado en mensualidades sin intereses que aparecerán en el estado de cuenta mensual del tarjetahabiente. Todos los artículos y servicios ofrecidos en el catálogo de premios incluyen impuestos aplicables y cargos por manejo y por envío.
+El envío de las mercancías tomará un periodo máximo de 15 días hábiles a partir de la fecha de canje. Los artículos del catálogo están sujetos a disponibilidad y pueden ser cambiados sin previo aviso.
+Es responsabilidad del cliente abrir el artículo y revisar que esté en buen estado desde el momento de la recepción del mismo.
+Si el paquete se encontrara en malas condiciones o dañado en el momento de la recepción no se debe recibir y el tarjetahabiente deberá reportarlo inmediatamente al 55-6720-1747 desde el D.F. y Área Metropolitana y al 800-300-1122 desde el Interior de la República, en un lapso no mayor a 3 días naturales a partir de la fecha de recepción. Es necesario conservar el empaque original del artículo y el de paquetería, ya que para hacer la reclamación se podrán requerir fotos del artículo.
+Las devoluciones de artículos sólo procederán en los casos en los que la mercancía se encuentre dañada por manejo de mensajería o en caso de recibir artículos incorrectos, para que la devolución tenga lugar, los productos deberán ser regresados con el empaque y los accesorios originales. Por lo anterior, es responsabilidad del tarjetahabiente proporcionar todos los datos correctos y completos para recepción de sus productos.
+Los productos no podrán ser enviados o entregados en apartados postales.
+Todos los productos ofrecidos cuentan con la garantía del fabricante y se podrá hacer válida en caso de fallas naturales o defecto de fabricación directamente con el proveedor del producto. La garantía del producto se cancelará de manera automática en cuanto se haga mal uso de éste. Ni INVEX, ni Master Loyalty Group ni ninguno de los proveedores asumen responsabilidad alguna por la calidad o condición de las mercancías. En caso de que no haya disponibilidad de un artículo canjeado, se hará llegar a los tarjetahabientes una propuesta de un artículo sustituto con características similares o mejores; cuando la propuesta no sea aceptada, se procederá con la cancelación y restauración de Puntos. Los tarjetahabientes cuentan con 20 días hábiles para confirmar su respuesta sobre la propuesta a partir de la fecha en que se les envía la notificación por correo o a través del Centro de Atención Telefónica, en caso de no recibir respuesta en este periodo, la redención se cancelará y se regresarán los puntos a la cuenta.”</p> 
+       <br>       
+         <h2 class="title" style="color: #a30831;">Activación de Certificados</h2>
+       <hr>
+       <p>Para la activación de certificados el tarjetahabiente tendrá que comunicarse al Centro de Atención Telefónica del Programa de Recompensas para que activen su certificado. Posterior a la llamada tomará 72 horas para que quede activo el certificado.</p> 
+       <br>  
+         <h2 class="title" style="color: #a30831;">Recarga de Saldo de Certificados</h2>
+       <hr>
+       <p>La activación de saldo se realizará en un periodo máximo de 72 horas después de haber realizado el canje.
+En los casos donde el monedero se encuentre inactivo o no se haya adquirido en el Programa de Recompensas, deberá notificarse al Centro de Atención Telefónica para poder realizar la recarga, una vez realizado en canje la recarga se verá reflejada en un periodo máximo de 72 horas.</p> 
+       <br>  
+         <h2 class="title" style="color: #a30831;">Cancelaciones</h2>
+       <hr>
+       <p>En caso de que la Tarjeta de Crédito sea cancelada por parte de INVEX o del tarjetahabiente, los Puntos acumulados en la cuenta serán cancelados y no podrán ser reactivados, por lo que se pierden de forma inmediata e irrevocable.
+En caso de que un tarjetahabiente decida separarse del Acelerador Monedero Volaris INVEX, los Puntos acumulados en la cuenta se conservarán. No se puede realizar ninguna funcionalidad cuando la membresía está en este estatus. En el caso que el cliente quisiera inscribirse nuevamente se podrá hacer uso de sus puntos vigentes.
+INVEX se reserva el derecho de otorgar Puntos adicionales a tarjetahabientes seleccionados. INVEX se reserva el derecho de descalificar a cualquier tarjetahabiente de participar en el Programa e invalidar todos los Puntos acumulados debido a abuso, fraude, o violación a los términos y condiciones del Programa y el Banco puede tomar esta determinación a su propia discreción.
+INVEX se reserva el derecho de modificar los términos y condiciones del Programa INVEX Recompensas Select o de cancelar, modificar o suspender temporal o definitivamente el Programa, así como tiene la opción de restringir, limitar, terminar o cancelar la redención de los Puntos en cualquier momento sin previo aviso y sin responsabilidad alguna.</p> 
+       <br>
+       
+
+                    
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <div class="container-fotter">
+                <div class="capa-fotter fotter1"></div>
+                <div class="capa-fotter fotter2"></div>
+                <div class="capa-fotter fotter3"></div>
+            </div>
+            <div class="logo-fotter">
+                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX_TyC_Acelerador_Volaris/imagen3.jpeg" alt="">
+            </div>
+        </footer>
+    </body>
+</body>
+
+</html>

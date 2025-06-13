@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landings legales</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 90px;
+            width: 50%;
+            border-bottom-left-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                
+            }
+          
+        }
+
+        .capa1 {
+            background: linear-gradient(to right, #4c2e62, #970e37);
+            z-index: 3;
+        }
+
+        .capa2 {
+            background-color: #161334;
+            top: 26px;
+            width: 47%;
+            z-index: 2;
+        }
+
+        .capa3 {
+            background: linear-gradient(to right, #7b66a8, #e1a0b6);
+            top: 51px;
+            width: 42%;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 5%;
+
+        }
+
+        .logo img {
+            height: 100px;
+            object-fit: cover;
+        }
+
+        main {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            background-image: url(/public/invex_marca_agua.png);
+               background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50%;
+
+        }
+
+        main .block {
+            position: absolute;
+            top: 0;
+            height: 5px;
+            max-width: 130px;
+            width: 50%;
+            background: linear-gradient(to right, #4c2e63, #9e0a34);
+        }
+
+        main hr {
+            margin-left: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+
+        main .hr-bottom {
+            width: 100%;
+        }
+
+        .title h1 {
+            color: #a30831;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        section {
+            font-size: 16px;
+            line-height: 1.3rem;
+        }
+
+        /* .list{
+            color: #a30831;
+            font-weight: 800;
+        }
+        .list li{
+            color: black
+        } */
+
+        .list {
+            list-style: none;
+            padding: 0;
+            counter-reset: item;
+        }
+
+        .list li {
+            position: relative;
+            padding-left: 40px;
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+
+        .list li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: #a30831;
+            font-weight: 800;
+        }
+
+        footer {
+            position: relative;
+            height: 100px;
+            background-color: white;
+            margin-bottom: 0;
+        }
+
+         .capa-fotter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 30%;
+            border-top-right-radius: 40px;
+             @media (max-width: 900px) {
+                height: 30px;
+                top: 30px;
+            }
+        }
+
+        .fotter1 {
+             background: linear-gradient(to right, #e1a0b6, #7b66a8);
+            
+            z-index: 1;
+        }
+
+        .fotter2 {
+            background-color: #161334;
+            top: 26px;
+            width: 37%;
+            z-index: 2;
+             @media (max-width: 900px) {
+               top: 56px;
+            }
+        }
+
+        .fotter3 {
+           background: linear-gradient(to right,  #970e37,#4c2e62);
+            top: 51px;
+            width: 42%;
+            z-index: 3;
+             @media (max-width: 900px) {
+               top: 86px;
+            }
+        }
+
+        .logo-fotter{
+        position: absolute;
+        width: 20%;
+        right: 0;
+        }
+
+        .logo-fotter img{
+            height: 100px;
+            object-fit: cover;
+        }
+
+          footer hr {
+            margin-right: 0;
+            width: 60%;
+            border: none;
+            background: #ededed;
+            height: 2px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX TyC Balance Transfer/hade.png" alt="">
+            </div>
+            <div class="banner-header">
+                <div class="capa capa1"></div>
+                <div class="capa capa2"></div>
+                <div class="capa capa3"></div>
+            </div>
+
+        </header>
+        <main>
+            <div class="block"></div>
+            <hr>
+            <div class="title">
+                <h2>Términos, Condiciones y Requisitos de Contratación</h2>
+                <h1>
+                    Balance Transfer INVEX
+</h1>
+            </div>
+            <hr class="hr-bottom">
+
+            <section>
+               
+                <ol class="list">
+                    <li>Bajo este programa se podrán diferir a Meses con Intereses las compras realizadas durante la
+vigencia de la promoción a partir de $1,000 pesos.</li>
+<br>
+                    <li>Esta promoción solo es válida para Clientes titulares de la Tarjeta de Crédito INVEX invitados a la
+promoción. No aplican tarjetas de crédito Empresariales.</li>
+                    <br>
+                    <li>El monto máximo a transferir estará sujeto al porcentaje de la línea de crédito disponible que
+determine Banco INVEX al momento de la solicitud y el monto mínimo a transferir es de $1,000.</li>
+                    <br>
+                    <li>El saldo transferido generará intereses a la tasa fija promocional que haya sido asignada a cada Cliente por Banco INVEX hasta el término del plazo elegido, independientemente del saldo restante de la Tarjeta de Crédito. </li>
+                    <br>
+                    <li>El Cliente podrá seleccionar el plazo de su preferencia entre 12, 18, 24, 36 y 48 meses para diferir el monto transferido.</li>
+                    <br>
+                    <li>El pago mensual es fijo e incluye capital e intereses antes del IVA. El IVA de los intereses gravables del periodo se verá reflejado en el próximo Estado de Cuenta.</li>
+                    <br>
+                    <li>El pago mensual que se efectúe con motivo de esta promoción, serán sumados al pago mínimo mensual del Cliente, el cuál se verá reflejado en el estado de cuenta.</li>
+                    <br>
+                    <li>El monto de la transferencia que solicites en caso de ser autorizado estará disponible en un máximo de 5 días hábiles.</li>
+                    <br>
+                    <li>Banco INVEX notificará en un lapso de 5 días la aprobación o declinación de la transferencia de saldo solicitada</li>
+                    <br>
+                    <li>La vigencia de esta promoción es por tiempo determinado, por lo que Banco INVEX podrá negar el
+diferimiento de las compras una vez vencida dicha promoción.</li>  
+                       <br>
+                    <li>En el Estado de Cuenta de la Tarjeta de Crédito de Banco INVEX se reflejarán las condiciones de la transferencia (Tasa anual, pago mensual, plazo, total, fecha de la transferencia), a partir de la cual se empezarán a generar los intereses correspondientes por esta promoción.</li>
+                      <br>
+                    <li>Una vez autorizada la transferencia, Banco INVEX será el único y exclusivo responsable ante el Tarjetahabiente de realizar el pago de la transferencia de saldo autorizada a la institución Bancaria correspondiente, quedando liberada de cualquier otra responsabilidad u obligación que el Tarjetahabiente tenga que cumplir con dicha Institución Bancaria.</li>
+                      <br>
+                    <li>El Tarjetahabiente será responsable ante la Institución Bancaria (de la cual quiere transferir el saldo) de realizar al menos los pagos mínimos que correspondan a la Tarjeta, en tanto la transferencia no haya sido cargada en la Tarjeta de Crédito de Banco INVEX, en el entendido de que, si la transferencia no cubre la totalidad del saldo a la fecha de pago, el Tarjetahabiente será responsable ante la Institución Bancaria de la continuidad de sus pagos.</li>
+                         <br>
+                    <li>Las transferencias de saldos e instrucciones realizadas por el Cliente a Banco INVEX son irreversibles, por lo que en caso de que la o las transferencias de saldos resulten con saldos a favor en la cuenta transferida, serán responsabilidad única y exclusivamente del Cliente, por lo que otorgó a Banco INVEX el finiquito más amplio que en derecho corresponda, no reservando acción, instancia o derecho alguno en contra de Banco INVEX. Esta transacción no causa comisión por la transferencia de saldo.</li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <div class="container-fotter">
+                <div class="capa-fotter fotter1"></div>
+                <div class="capa-fotter fotter2"></div>
+                <div class="capa-fotter fotter3"></div>
+            </div>
+            <div class="logo-fotter">
+                <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX TyC Balance Transfer/imagen1.png" alt="">
+            </div>
+        </footer>
+    </body>
+</body>
+
+</html>

@@ -73,11 +73,11 @@
             position: relative;
             margin: 0 auto;
             width: 90%;
-            background-image: url(/public/invex_marca_agua.png);
+            text-align: justify;
+             background-image: url(https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/invex_logos_legales/invex_marca_agua.png);
+            background-repeat: space;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: 50%;
-
+            background-size: 100%;
         }
 
         main .block {
@@ -109,12 +109,27 @@
             color: #a30831;
             font-size: 30px;
             font-weight: 800;
+
+            @media (max-width: 900px) {
+                font-size: 24px;
+            }
+        }
+
+        h3 {
+            color: #a30831;
+            font-size: 20px;
+            font-weight: 800;
+
+            @media (max-width: 900px) {
+                font-size: 20px;
+            }
         }
 
         section {
             font-size: 16px;
             line-height: 1.3rem;
-            text-align: justify;
+
+
         }
 
 
@@ -129,7 +144,7 @@
             padding-left: 40px;
             counter-increment: item;
             margin-bottom: 10px;
-            text-align: justify;
+
         }
 
         .list li::before {
@@ -138,6 +153,12 @@
             left: 0;
             color: #a30831;
             font-weight: 800;
+        }
+
+
+        .img-table {
+            margin: 20px auto;
+            width: 100%;
         }
 
         footer {
@@ -215,6 +236,7 @@
             height: 2px;
         }
     </style>
+
 </head>
 
 
@@ -298,7 +320,8 @@
             <div class="capa-fotter fotter3"></div>
         </div>
         <div class="logo-fotter">
-            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX_TyC_Acelerador_Volaris/imagen3.jpeg" alt="logo_invex">
+            <img src="https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/NOW INVEX_TyC_Acelerador_Volaris/imagen3.jpeg"
+                alt="logo_invex">
         </div>
     </footer>
 </body>

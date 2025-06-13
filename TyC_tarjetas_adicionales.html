@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landings legales</title>
-    <style>
+     <style>
         body {
             margin: 0;
             height: 100vh;
@@ -73,10 +73,11 @@
             position: relative;
             margin: 0 auto;
             width: 90%;
-            background-image: url(/public/invex_marca_agua.png);
+            text-align: justify;
+            background-image: url(https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/invex_logos_legales/invex_marca_agua.png);
+            background-repeat: space;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: 50%;
+            background-size: 100%;
 
         }
 
@@ -109,12 +110,27 @@
             color: #a30831;
             font-size: 30px;
             font-weight: 800;
+
+            @media (max-width: 900px) {
+                font-size: 24px;
+            }
+        }
+
+        h3 {
+            color: #a30831;
+            font-size: 20px;
+            font-weight: 800;
+
+            @media (max-width: 900px) {
+                font-size: 20px;
+            }
         }
 
         section {
             font-size: 16px;
             line-height: 1.3rem;
-            text-align: justify;
+         
+
         }
 
 
@@ -129,7 +145,7 @@
             padding-left: 40px;
             counter-increment: item;
             margin-bottom: 10px;
-            text-align: justify;
+
         }
 
         .list li::before {
@@ -140,10 +156,10 @@
             font-weight: 800;
         }
 
-        a {
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
+
+        .img-table {
+            margin: 20px auto;
+            width: 100%;
         }
 
         footer {

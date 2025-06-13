@@ -64,7 +64,7 @@
             object-fit: cover;
 
             @media (max-width: 900px) {
-                height: 40px;
+                height: 60px;
             }
         }
 
@@ -73,10 +73,6 @@
             position: relative;
             margin: 0 auto;
             width: 90%;
-            background-image: url(/public/invex_marca_agua.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 50%;
             text-align: justify;
 
         }
@@ -116,7 +112,7 @@
             }
         }
 
-        .title h3 {
+        h3 {
             color: #a30831;
             font-size: 20px;
             font-weight: 800;
@@ -129,13 +125,13 @@
         section {
             font-size: 16px;
             line-height: 1.3rem;
+            background-image: url(https://d3jx1664xx9tr2.cloudfront.net/assets/Mayo25/invex_logos_legales/invex_marca_agua.png);
+            background-repeat: space;
+            background-position: center;
+            background-size: 100%;
+
         }
 
-        .acelerador_volaris {
-            margin: 10px auto;
-            width: 90%;
-            max-width: 900px;
-        }
 
         .list {
             list-style: none;
@@ -148,6 +144,7 @@
             padding-left: 40px;
             counter-increment: item;
             margin-bottom: 10px;
+
         }
 
         .list li::before {
@@ -158,6 +155,10 @@
             font-weight: 800;
         }
 
+        .img-table{
+            margin: 20px auto;
+            width: 100%;
+        }
         footer {
             position: relative;
             height: 100px;
